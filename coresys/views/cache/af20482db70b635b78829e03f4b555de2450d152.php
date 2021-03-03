@@ -60,7 +60,7 @@
 		<link rel="apple-touch-startup-image" href="<?=BASE_URL?>img/splash/iphone.png" media="screen and (max-device-width: 320px)">
 		
 				
-		@yield('stylesheet')
+		<?php echo $__env->yieldContent('stylesheet'); ?>
 
 		<style>
 			.select2-container--open .select2-dropdown {
@@ -132,7 +132,7 @@
 			  display: inline;
 			}
 
-			@media screen and (max-width: 1024px){
+			@media  screen and (max-width: 1024px){
 			hanzmobview{
 				display: none;
 			  }
@@ -1164,7 +1164,7 @@
 				</span>
 
 				<!-- breadcrumb -->
-				@yield('breadcrumb')
+				<?php echo $__env->yieldContent('breadcrumb'); ?>
 				<!-- end breadcrumb -->
 
 				<!-- You can also add more buttons to the
@@ -1184,7 +1184,7 @@
 			<!-- MAIN CONTENT -->
 			<div id="content">
 
-				@yield('content')
+				<?php echo $__env->yieldContent('content'); ?>
 
 			</div>
 			<!-- END MAIN CONTENT -->
@@ -1306,7 +1306,7 @@
 		<script src="<?php echo base_url();?>seipkon/assets/fullcalendar/dist/scheduler.min.js"></script>
 		
 		<!-- PAGE RELATED PLUGIN(S) -->
-		@yield('javascript')
+		<?php echo $__env->yieldContent('javascript'); ?>
 
 		<!-- Your GOOGLE ANALYTICS CODE Below -->
 		<script type="text/javascript">
@@ -1327,4 +1327,4 @@
 
 	</body>
 
-</html>
+</html><?php /**PATH D:\DEV_SERVER\htdocs\git\tiket\coresys\views/layouts/master.blade.php ENDPATH**/ ?>
