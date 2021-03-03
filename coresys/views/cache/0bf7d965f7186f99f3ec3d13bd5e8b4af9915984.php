@@ -1,10 +1,8 @@
-@extends('layouts.master')
-
-@section('stylesheet')
-@endsection
+<?php $__env->startSection('stylesheet'); ?>
+<?php $__env->stopSection(); ?>
 
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 	<!--<div class="row">
 		<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
 		</div>
@@ -189,13 +187,13 @@
 					?>
 					<div data-options="region:'center',title:'<?=$title?>'">
 						<?php if(!isset($table_view) || $table_view=='atm') { ?>
-							@include('pages.dashboard.table_atm')
+							<?php echo $__env->make('pages.dashboard.table_atm', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 						<?php } else if(!isset($table_view) || $table_view=='ticket') { ?>
-							@include('pages.dashboard.table_ticket')
+							<?php echo $__env->make('pages.dashboard.table_ticket', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 						<?php } else if(!isset($table_view) || $table_view=='attend') { ?>
-							@include('pages.dashboard.table_attend')
+							<?php echo $__env->make('pages.dashboard.table_attend', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 						<?php } else if(!isset($table_view) || $table_view=='part') { ?>
-							@include('pages.dashboard.table_part')
+							<?php echo $__env->make('pages.dashboard.table_part', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 						<?php } ?>
 					</div>
 				</div>
@@ -871,8 +869,8 @@
 																	}
 
 																	.shadow {
-																		-webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
-																		filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+																		-webkit-filter: drop-shadow( 0px 1px 1px rgba(0,0,0,.3) );
+																		filter: drop-shadow( 0px 1px 1px rgba(0,0,0,.3) );
 																	}
 																</style>
 																<center>
@@ -1012,10 +1010,10 @@
 				
 
 	</section>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
-@section('javascript')
+<?php $__env->startSection('javascript'); ?>
 	<script src="<?=BASE_URL?>js/plugin/morris/raphael.min.js"></script>
 	<script src="<?=BASE_URL?>js/plugin/morris/morris.min.js"></script>
 
@@ -1227,7 +1225,7 @@
                 })
                 .style({
                     fill:'#fff',
-                    'font-size':'10px'
+                    'font-size':'18px'
                 });
 
         var legendRectSize=20;
@@ -1267,7 +1265,7 @@
                     return d;
                 }).style({
                     fill:'#929DAF',
-                    'font-size':'14px'
+                    'font-size':'18px'
                 });
     };
 
@@ -1590,4 +1588,5 @@
 		
 	</script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\git\tiket\coresys\views/pages/dashboard.blade.php ENDPATH**/ ?>

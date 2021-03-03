@@ -97,51 +97,6 @@
 	  }
 	}
 	</style>
-	<div class="row">
-	<hanzmobview>
-		<article class="btn-group col-sm-12">
-			<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
-				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>master_inventory" class="btn btn-default btn-circle btn-sm zoomsmall">
-				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/inventory3.png" height="24" width="24" />
-					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Inventory Stock</small><br>
-						<small style="color:white;font-size:12px;">Inventory Logistics</small>
-					</p>
-				</a>
-				</div>
-				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>transaction_in" class="btn btn-default btn-circle btn-sm zoomsmall active">
-				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/incoming.png" height="24" width="24" />
-					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Transaction In</small><br>
-						<small style="color:white;font-size:12px;">Incoming Transaction</small>
-					</p>
-				</a>
-				</div>
-				<div class="col-sm-4" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>transaction_out" class="btn btn-default btn-circle zoomsmall">
-				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/outgoing.png" height="24" width="24" />
-					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Transaction Out</small><br>
-						<small style="color:white;font-size:12px;">Outgoing Transaction</small>
-					</p>
-				</a>
-				</div>
-				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>request_sparepart" class="btn btn-default btn-circle zoomsmall ">
-				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/db_add.png" height="26" width="26" />
-					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Request Sparepart</small><br>
-						<small style="color:white;font-size:12px;">Request Sparepart</small>
-					</p>
-				</a>
-				</div>
-			</div>
-		</article>
-	</hanzmobview>
-	</div>
-
 
 	<!-- widget grid -->
 	<section id="widget-grid" class="">
@@ -150,7 +105,7 @@
 	<div class="row">
 			
 	<!-- NEW WIDGET START -->
-	<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: -20px 0px 0px 0px;">
+	<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px;">
 		<!-- Widget ID (each widget will need unique ID)-->
 		<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" 	
 			data-widget-colorbutton="false" 
@@ -160,7 +115,7 @@
 			data-widget-deletebutton="false"
 			data-widget-sortable="false">
 			<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
-				<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data Transaction In</b></h2>
+				<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data All Return Bad</b></h2>
 				
 			</header>
 			<span class="ribbon-button-alignment pull-right" style="margin: -42px 0px 0px 0px; "> 

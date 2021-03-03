@@ -1,612 +1,430 @@
 @extends('layouts.master')
 
 @section('stylesheet')
+
 @endsection
 
+@section('breadcrumb')
+@endsection
 
 @section('content')
-<style>
-.hrow-gap1{
-margin: 20px 0px 0px 0px;
-}
-.hrow-gap2{
-margin: -30px 0px 0px 0px;
-}
-.hrow-gap3{
-margin: -30px 0px 0px 0px;
-}
+<!-- Widget ID (each widget will need unique ID)-->
+<div class="jarviswidget" id="wid-id-5" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 
-hanzmobview{
-  display: inline;
-}
-@media screen and (max-width: 1024px){
-hanzmobview{
-    display: none;
-  }
-.art-one{
-  padding: 10px;
-  }
+<header style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 0%, #1C1C1C 150%);">
+<span class="widget-icon"><img style="float: left; margin: 8px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/userguide.png" height="18" width="18" /></span>
+	<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Userguide & Documentation</b></h2>
+</header>
+<!-- widget div-->
+<div>
 
-}
-</style>
-<div class="row art-one">
-<hanzmobview>
-	<article class="btn-group col-sm-12">
-		<div class="navbar navbar-default" style="background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);border-radius: 5px 5px 0px 0px;">
-			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>dashboard_merchant_internal" class="btn btn-default btn-circle btn-sm zoomsmall">
-			<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbut.png" height="24" width="24" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Client Dashboard</small><br>
-					<small style="color:white;font-size:12px;">Client Dashboard Monitoring</small>
-				</p>
-			</a>
-			</div>
-			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>master_client" class="btn btn-default btn-circle btn-sm zoomsmall active">
-			<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbook.png" height="24" width="24" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Client & Customer </small><br>
-					<small style="color:white;font-size:12px;">Data Client & Customer </small>
-				</p>
-			</a>
-			</div>
-			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>master_atm" class="btn btn-default btn-circle zoomsmall">
-			<img style="float: left; margin: -1px 10px 0px 4px;" src="<?=base_url()?>seipkon/assets/img/atm2.png" height="24" width="24" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Data Mesin ATM</small><br>
-					<small style="color:white;font-size:12px;">Data Mesin ATM</small>
-				</p>
-			</a>
-			</div>
-			<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>master_location" class="btn btn-default btn-circle btn-sm zoomsmall">
-			<img style="float: left; margin: -2px 10px 0px 3px;" src="<?=base_url()?>seipkon/assets/img/whiteloc.png" height="28" width="28" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Area & Location</small><br>
-					<small style="color:white;font-size:12px;">Area & Location Coverage</small>
-				</p>
-			</a>
-			</div>			
-		</div>
-	</article>
-</hanzmobview>
+<!-- widget edit box -->
+<div class="jarviswidget-editbox">
+<!-- This area used as dropdown edit box -->
+
 </div>
+<!-- end widget edit box -->
 
+<!-- widget content -->
+<div class="widget-body no-padding">
+	<iframe src="http://localhost/2021/JAN-W2/ATMFDS-INSAN/helpdesk-gts/" style="border:none; margin: 0px 0px 0px 0px;" width="100%" height="700">
+	</iframe>	
+</div>
+<!-- end widget content -->
 
-	<!-- widget grid -->
-	<section id="widget-grid" class="">
+</div>
+<!-- end widget div -->
 
-		<!-- row -->
-		<div class="row">
-			
-			<!-- NEW WIDGET START -->
-			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: -20px 0px 0px 0px;">
+</div>
+<!-- end widget -->
+@endsection			
 
-				<!-- Widget ID (each widget will need unique ID)-->
-				<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-colorbutton="false" 								  data-widget-togglebutton="false"								  data-widget-fullscreenbutton="false"							  data-widget-deletebutton="false"							  data-widget-sortable="false"
-				data-widget-editbutton="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+@section('javascript')			
+<script type="text/javascript">
+	/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+	 *
+	 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+	 *
+	 * // activate tooltips
+	 * $("[rel=tooltip]").tooltip();
+	 *
+	 * // activate popovers
+	 * $("[rel=popover]").popover();
+	 *
+	 * // activate popovers with hover states
+	 * $("[rel=popover-hover]").popover({ trigger: "hover" });
+	 *
+	 * // activate inline charts
+	 * runAllCharts();
+	 *
+	 * // setup widgets
+	 * setup_widgets_desktop();
+	 *
+	 * // run form elements
+	 * runAllForms();
+	 *
+	 ********************************
+	 *
+	 * pageSetUp() is needed whenever you load a page.
+	 * It initializes and checks for all basic elements of the page
+	 * and makes rendering easier.
+	 *
+	 */
 
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"
+	pageSetUp();
 
-					-->
-					<header style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);">
-						<span class="widget-icon"><img style="float: left; margin: 8px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/atm2.png" height="18" width="18" /></span>
-						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data Client & Customer</b></h2>
-						<a onclick="createModal()" class="btn btn-default btn-xs pull-right zoomsmall" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); border-radius: 4px; margin: 5px 5px 0px 0px;">
-						<img style="float: left; margin: 0px 5px 0px 0px;" src="<?=base_url()?>seipkon/assets/img/adddata.png" height="20" width="20" />
-						<b>Tambah Data Client</b>						
-						</a>
-					</header>
-
-					<!-- widget div-->
-					<div>
-
-						<!-- widget content -->
-						<div class="widget-body no-padding">
-						<div class="easyui-layout" style="width:100%;height:450px;">
-							<div data-options="region:'north'" style="height:50px"></div>
-							<div data-options="region:'south',split:true" style="height:50px;"></div>
-							<div data-options="region:'east',split:true,title:'East',collapsible:false" style="width:250px;">
-								
-								
-							</div>
-							<div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'" style="padding:10px">
-							</div>
-						</div>
-						</div>
-						<!-- end widget content -->
-
-					</div>
-					<!-- end widget div -->
-
-				</div>
-				<!-- end widget -->
-
-			</article>
-			<!-- WIDGET END -->
-		</div>
-
-		<!-- end row -->
-
-		<!-- end row -->
+	// PAGE RELATED SCRIPTS
+	
+	function tes(iframe, ip) {
+		var iframe = $("#"+iframe)[0];
 		
-		<div class="container content_form" hidden>
-			<form action="<?=base_url()?>master_client/insert" style="margin-bottom: 10px" autocomplete="off" id="data" method="post" enctype="multipart/form-data">
-				<input type="hidden" name="id" class="id form-control" />
-				<div class="form-group">
-					<label class="control-label" for="client">Nama Client/Customer</label>
-					<input type="text" name="client" placeholder="Nama Client" class="client form-control" required />
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="cabang">Alamat Kantor/Cabang</label>
-					<input type="text" name="cabang" placeholder="Cabang" class="cabang form-control" required />
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="alamat">Area Service Point</label>
-					<input type="text" name="alamat" placeholder="Area ATM Service Point" class="alamat form-control">
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="pic">Client P.I.C</label>
-					<input type="text" name="pic" placeholder="PIC" class="pic form-control" required />
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="pic">Logo</label>
-					<input type="file" name="logo" placeholder="logo" class="logo form-control" required />
-				</div>
-				<!--<div class="form-group">
-					<label class="control-label" for="username">Username</label>
-					<input type="text" name="username" placeholder="Username" class="username form-control"/>
-				</div>
-				<div class="form-group">
-					<label class="control-label" for="password">Password</label>
-					<input type="password" name="password" placeholder="Password" class="password form-control"/>
-				</div>-->
-			</form>
-		</div>
+		// console.log("#"+iframe);
+		console.log(iframe);
+		// console.log(iframe.contentDocument());
+		// console.log(iframe.contentWindow());
 		
-		<div class="container content_form2" hidden>
-			<form action="<?=base_url()?>master_client/insert" class="formName">
-				<div class="form-group">
-					<label>Masukan Data Client & Customer</label>
-					<input type="text" placeholder="Data Lokasi" class="name form-control" required />
-				</div>
-			</form>
-		</div>
-
-	</section>
-@endsection
-
-
-@section('javascript')
-	<script type="text/javascript">
-
-		/* DO NOT REMOVE : GLOBAL FUNCTIONS!
-		 *
-		 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
-		 *
-		 * // activate tooltips
-		 * $("[rel=tooltip]").tooltip();
-		 *
-		 * // activate popovers
-		 * $("[rel=popover]").popover();
-		 *
-		 * // activate popovers with hover states
-		 * $("[rel=popover-hover]").popover({ trigger: "hover" });
-		 *
-		 * // activate inline charts
-		 * runAllCharts();
-		 *
-		 * // setup widgets
-		 * setup_widgets_desktop();
-		 *
-		 * // run form elements
-		 * runAllForms();
-		 *
-		 ********************************
-		 *
-		 * pageSetUp() is needed whenever you load a page.
-		 * It initializes and checks for all basic elements of the page
-		 * and makes rendering easier.
-		 *
-		 */
-
-		pageSetUp();
-		
-		/*
-		 * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
-		 * eg alert("my home function");
-		 * 
-		 * var pagefunction = function() {
-		 *   ...
-		 * }
-		 * loadScript("<?=BASE_URL?>js/plugin/_PLUGIN_NAME_.js", pagefunction);
-		 * 
-		 */
-		
-		// PAGE RELATED SCRIPTS
-		
-		// pagefunction	
-		var table;
-		var pagefunction = function() {
-			//console.log("cleared");
-			
-			/* // DOM Position key index //
-			
-				l - Length changing (dropdown)
-				f - Filtering input (search)
-				t - The Table! (datatable)
-				i - Information (records)
-				p - Pagination (paging)
-				r - pRocessing 
-				< and > - div elements
-				<"#id" and > - div with an id
-				<"class" and > - div with a class
-				<"#id.class" and > - div with an id and class
-				
-				Also see: http://legacy.datatables.net/usage/features
-			*/	
-
-			/* BASIC ;*/
-				var responsiveHelper_dt_basic = undefined;
-				var responsiveHelper_datatable_fixed_column = undefined;
-				var responsiveHelper_datatable_col_reorder = undefined;
-				var responsiveHelper_datatable_tabletools = undefined;
-				
-				var breakpointDefinition = {
-					tablet : 1024,
-					phone : 480
-				};
-				
-				var base_url = "<?php echo base_url();?>";
-				table = $('#dt_basic').DataTable({
-					"sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs'l>r>"+
-						"t"+
-						"<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
-					"autoWidth" : true,
-					"preDrawCallback" : function() {
-						// Initialize the responsive datatables helper once.
-						if (!responsiveHelper_dt_basic) {
-							responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_basic'), breakpointDefinition);
-						}
-					},
-					"rowCallback" : function(nRow) {
-						responsiveHelper_dt_basic.createExpandIcon(nRow);
-					},
-					"drawCallback" : function(oSettings) {
-						responsiveHelper_dt_basic.respond();
-					},
-					"pageLength" : 10,
-					"serverSide": true,
-					"order": [[1, "asc" ]],
-					"columnDefs": [{"orderable": false, "targets": 0}],
-					"ajax":{
-						url :  base_url + 'master_client/get_data',
-						type : 'POST',
-						dataFilter: function(data) {
-							console.log(data);
-							var json = jQuery.parseJSON( data );
-							json.recordsTotal = json.recordsTotal;
-							json.recordsFiltered = json.recordsFiltered;
-							json.data = json.data;
-
-							return JSON.stringify( json );
-						}
-					},
-				});
-
-			/* END BASIC */
-
-		};
-		
-		function createModal() {
-			var content = $('.content_form').clone().html();
-		
-			$.confirm({
-				draggable: false,
-				title: false,
-				theme: 'light',
-				content: content,
-				buttons: {
-					formSubmit: {
-						text: 'Submit',
-						btnClass: 'btn-blue',
-						action: function () {
-							var self = this;
-							var url = self.$content.find('form')[0].action;
-							var formData = new FormData(self.$content.find('form')[0]);
-							
-							var client 	 = this.$content.find('.client').val();
-							var cabang 	 = this.$content.find('.cabang').val();
-							var alamat 	 = this.$content.find('.alamat').val();
-							var pic 	 = this.$content.find('.pic').val();
-							// var username = this.$content.find('.username').val();
-							// var password = this.$content.find('.password').val();
-							
-							if(!client){ $.alert('Please provide a valid client'); return false; }
-							if(!cabang){ $.alert('Please provide a valid cabang'); return false; }
-							if(!alamat){ $.alert('Please provide a valid alamat'); return false; }
-							if(!pic){ $.alert('Please provide a valid picture file'); return false; }
-							// if(!username){ $.alert('provide a valid username'); return false; }
-							// if(!password){ $.alert('provide a valid password'); return false; }
-							
-							var data = {
-								id			: null,
-								client		: client,
-								alamat		: alamat,
-								pic			: pic
-								// username	: username,
-								// password	: password
-							};
-							
-							console.table(url);
-							console.table(data);
-							
-							// self.showLoading();
-							
-							$.ajax({
-								url: url,
-								type: 'POST',
-								data: formData,
-								success: function (data) {
-									response = JSON.parse(data);
-									if(response.status=="exist") {
-										self.hideLoading();
-										$.alert('Bank sudah tersedia!');
-									} else {
-										self.close();
-										
-										$.confirm({
-											title: false,
-											content: 'SUCCESS',
-											autoClose: 'ok|1000',
-											buttons: {
-												ok: function () {}
-											}
-										});
-										
-										table.ajax.reload( null, false );
-									}
-								},
-								cache: false,
-								contentType: false,
-								processData: false
-							});
-							
-							// $.ajax({
-								// url: url,
-								// dataType: 'json',
-								// method: 'post',
-								// data: data,
-								// timeout: 3000,
-							// }).done(function (response) {
-								// console.log(response);
-								// if(response.status=="exist") {
-									// self.hideLoading();
-									// $.alert('Bank sudah tersedia!');
-								// } else {
-									// self.close();
-									
-									// $.confirm({
-										// title: false,
-										// content: 'SUCCESS',
-										// autoClose: 'ok|1000',
-										// buttons: {
-											// ok: function () {}
-										// }
-									// });
-									
-									// table.ajax.reload( null, false );
-								// }
-							// }).fail(function(){
-								// self.hideLoading();
-								// $.alert('Something went wrong.');
-							// });
-							
-							return false;
-						}
-					},
-					cancel: function () {},
-				},
-				onContentReady: function () {
-					// bind to events
-					var jc = this;
-					this.$content.find('.name').focus();
-					this.$content.find('form').on('submit', function (e) {
-						// if the user submits the form by pressing enter in the field.
-						e.preventDefault();
-						jc.$$formSubmit.trigger('click'); // reference the button and click it
-					});
-				}
-			});
+		try {
+			console.log("AAA "+ip)
+			if ( iframe.innerHTML() ) {
+				console.log("BBB")
+			}
+		} catch {			
+			// console.log("CCC "+ip)
 		}
-		
-		function updateModal(id, client, cabang, alamat, pic, username, password) {
-			var content = $('.content_form').clone().html();
-		
-			$.confirm({
-				draggable: false,
-				title: false,
-				theme: 'light',
-				content: content,
-				buttons: {
-					formSubmit: {
-						text: 'Submit',
-						btnClass: 'btn-blue',
-						action: function () {
-							var self = this;
-							var url = self.$content.find('form')[0].action;
-							var formData = new FormData(self.$content.find('form')[0]);
-							
-							var client 	 = this.$content.find('.client').val();
-							var cabang 	 = this.$content.find('.cabang').val();
-							var alamat 	 = this.$content.find('.alamat').val();
-							var pic 	 = this.$content.find('.pic').val();
-							// var username = this.$content.find('.username').val();
-							// var password = this.$content.find('.password').val();
-							
-							if(!client){ $.alert('Please provide a valid client'); return false; }
-							if(!cabang){ $.alert('Please provide a valid cabang'); return false; }
-							if(!alamat){ $.alert('Please provide a valid alamat'); return false; }
-							if(!pic){ $.alert('Please provide a valid picture file'); return false; }
-							// if(!username){ $.alert('provide a valid username'); return false; }
-							// if(!password){ $.alert('provide a valid password'); return false; }
-							
-							var data = {
-								id			: id,
-								client		: client,
-								alamat		: alamat,
-								pic			: pic,
-								username	: username,
-								password	: password
-							};
-							
-							console.table(url);
-							console.table(data);
-							
-							self.showLoading();
-							
-							$.ajax({
-								url: url,
-								type: 'POST',
-								data: formData,
-								success: function (data) {
-									response = JSON.parse(data);
-									if(response.status=="exist") {
-										self.hideLoading();
-										$.alert('Bank sudah tersedia!');
-									} else {
-										self.close();
-										
-										$.confirm({
-											title: false,
-											content: 'SUCCESS',
-											autoClose: 'ok|1000',
-											buttons: {
-												ok: function () {}
-											}
-										});
-										
-										table.ajax.reload( null, false );
-									}
-								},
-								cache: false,
-								contentType: false,
-								processData: false
-							});
-							
-							// $.ajax({
-								// url: url,
-								// dataType: 'json',
-								// method: 'post',
-								// data: data,
-								// timeout: 3000,
-							// }).done(function (response) {
-								// console.log(response);
-								// if(response.status=="exist") {
-									// self.hideLoading();
-									// $.alert('Bank sudah tersedia!');
-								// } else {
-									// self.close();
-									
-									// $.confirm({
-										// title: false,
-										// content: 'SUCCESS',
-										// autoClose: 'ok|1000',
-										// buttons: {
-											// ok: function () {}
-										// }
-									// });
-									
-									// table.ajax.reload( null, false );
-								// }
-							// }).fail(function(){
-								// self.hideLoading();
-								// $.alert('Something went wrong.');
-							// });
-							
-							return false;
-						}
-					},
-					cancel: function () {},
-				},
-				onContentReady: function () {
-					// bind to events
-					var jc = this;
-					jc.$content.find('.id').val(id);
-					jc.$content.find('.client').val(client);
-					jc.$content.find('.cabang').val(cabang);
-					jc.$content.find('.alamat').val(alamat);
-					jc.$content.find('.pic').val(pic);
-					// jc.$content.find('.username').val(username);
-					// jc.$content.find('.password').val(password);
-					
-					
-					this.$content.find('form').on('submit', function (e) {
-						// if the user submits the form by pressing enter in the field.
-						e.preventDefault();
-						jc.$$formSubmit.trigger('click'); // reference the button and click it
-					});
-				}
-			});
-		}
-		
-		
-			
-		function deleteAction2(url) {
-			$.confirm({
-				title: 'Delete data?',
-				content: 'This dialog will automatically trigger \'cancel\' in 6 seconds if you don\'t respond.',
-				autoClose: 'cancel|8000',
-				buttons: {
-					delete: {
-						text: 'delete',
-						keys: ['enter'],
-						action: function () {
-							$.ajax({
-								url: url,
-								dataType: 'html',
-								timeout: 3000,
-							}).done(function (response) {
-								
-								if(response=="SUCCESS") {
-									table.ajax.reload( null, false );
-								}
-							}).fail(function(){
-								self.hideLoading();
-								$.alert('Something went wrong.');
-							});
-						}
-					},
-					cancel: function () {}
-				}
-			});
-		}
+		// document.getElementById(iframe).src = "http://"+ip+"/fdsatm/";
+		// console.log(iframe);
+		// if ( iframe.innerHTML() ) {
+			// // get and check the Title (and H tags if you want)
+			// var ifTitle = iframe.contentDocument.title;
+			// if ( ifTitle.indexOf("404")>=0 ) {
+				// // we have a winner! probably a 404 page!
+				// alert("AAA");
+			// }
+		// } else {
+			// // didn't load
+			// alert("BBB");
+		// }
+	}
+	
+	function load_iframe(ip) {
+		alert(ip);
+		// var iframe = $("#iframe")[0];
+		// iframe.src = "http://"+ip+"/fdsatm/";
+		// if ( iframe.innerHTML() ) {
+			// // get and check the Title (and H tags if you want)
+			// var ifTitle = iframe.contentDocument.title;
+			// if ( ifTitle.indexOf("404")>=0 ) {
+				// // we have a winner! probably a 404 page!
+				// alert("AAA");
+			// }
+		// } else {
+			// // didn't load
+			// alert("BBB");
+		// }
+	}
 
-		// load related plugins
-		
-		loadScript("<?=BASE_URL?>js/plugin/datatables/jquery.dataTables.min.js", function(){
-			loadScript("<?=BASE_URL?>js/plugin/datatables/dataTables.colVis.min.js", function(){
-				loadScript("<?=BASE_URL?>js/plugin/datatables/dataTables.tableTools.min.js", function(){
-					loadScript("<?=BASE_URL?>js/plugin/datatables/dataTables.bootstrap.min.js", function(){
-						loadScript("<?=base_url()?>seipkon/assets/jqueryconfirm/dist/jquery-confirm.min.js", function(){
-							loadScript("<?=BASE_URL?>js/plugin/datatable-responsive/datatables.responsive.min.js", pagefunction)
-						});
-					});
-				});
-			});
+	function noAnswer() {
+
+		$.smallBox({
+			title : "Sure, as you wish sir...",
+			content : "",
+			color : "#A65858",
+			iconSmall : "fa fa-times",
+			timeout : 5000
 		});
 
+	};
+	
+	function closedthis() {
+		$.smallBox({
+			title : "Great! You just closed that last alert!",
+			content : "This message will be gone in 5 seconds!",
+			color : "#739E73",
+			iconSmall : "fa fa-cloud",
+			timeout : 5000
+		});
+	};		
 
-	</script>
+	// pagefunction
+	
+	var pagefunction = function() {
+
+		/*
+		 * Autostart Carousel
+		 */
+		$('.carousel.slide').carousel({
+			interval : 3000,
+			cycle : true
+		});
+		$('.carousel.fade').carousel({
+			interval : 3000,
+			cycle : true
+		});
+		
+		// Fill all progress bars with animation
+		$('.progress-bar').progressbar({
+			display_text : 'fill'
+		});
+
+		/*
+		 * Smart Notifications
+		 */
+		$('#eg1').click(function(e) {
+	
+			$.bigBox({
+				title : "Big Information box",
+				content : "This message will dissapear in 6 seconds!",
+				color : "#C46A69",
+				//timeout: 6000,
+				icon : "fa fa-warning shake animated",
+				number : "1",
+				timeout : 6000
+			});
+	
+			e.preventDefault();
+	
+		})
+	
+		$('#eg2').click(function(e) {
+	
+			$.bigBox({
+				title : "Big Information box",
+				content : "Lorem ipsum dolor sit amet, test consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+				color : "#3276B1",
+				//timeout: 8000,
+				icon : "fa fa-bell swing animated",
+				number : "2"
+			});
+	
+			e.preventDefault();
+		})
+	
+		$('#eg3').click(function(e) {
+	
+			$.bigBox({
+				title : "Shield is up and running!",
+				content : "Lorem ipsum dolor sit amet, test consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+				color : "#C79121",
+				//timeout: 8000,
+				icon : "fa fa-shield fadeInLeft animated",
+				number : "3"
+			});
+	
+			e.preventDefault();
+	
+		})
+	
+		$('#eg4').click(function(e) {
+	
+			$.bigBox({
+				title : "Success Message Example",
+				content : "Lorem ipsum dolor sit amet, test consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+				color : "#739E73",
+				//timeout: 8000,
+				icon : "fa fa-check",
+				number : "4"
+			}, function() {
+				closedthis();
+			});
+	
+			e.preventDefault();
+	
+		})
+	
+		$('#eg5').click(function() {
+	
+			$.smallBox({
+				title : "Ding Dong!",
+				content : "Someone's at the door...shall one get it sir? <p class='text-align-right'><a href='javascript:void(0);' class='btn btn-primary btn-sm'>Yes</a> <a href='javascript:void(0);'  onclick='noAnswer();' class='btn btn-danger btn-sm'>No</a></p>",
+				color : "#296191",
+				//timeout: 8000,
+				icon : "fa fa-bell swing animated"
+			});
+	
+		});
+	
+		$('#eg6').click(function() {
+	
+			$.smallBox({
+				title : "Big Information box",
+				content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+				color : "#5384AF",
+				//timeout: 8000,
+				icon : "fa fa-bell"
+			});
+	
+		})
+	
+		$('#eg7').click(function() {
+	
+			$.smallBox({
+				title : "James Simmons liked your comment",
+				content : "<i class='fa fa-clock-o'></i> <i>2 seconds ago...</i>",
+				color : "#296191",
+				iconSmall : "fa fa-thumbs-up bounce animated",
+				timeout : 4000
+			});
+	
+		})
+	
+		/*
+		* SmartAlerts
+		*/
+		
+		// With Callback
+		
+		$("#smart-mod-eg1").click(function(e) {
+			$.SmartMessageBox({
+				title : "Smart Alert!",
+				content : "This is a confirmation box. Can be programmed for button callback",
+				buttons : '[No][Yes]'
+			}, function(ButtonPressed) {
+				if (ButtonPressed === "Yes") {
+	
+					$.smallBox({
+						title : "Callback function",
+						content : "<i class='fa fa-clock-o'></i> <i>You pressed Yes...</i>",
+						color : "#659265",
+						iconSmall : "fa fa-check fa-2x fadeInRight animated",
+						timeout : 4000
+					});
+				}
+				if (ButtonPressed === "No") {
+					$.smallBox({
+						title : "Callback function",
+						content : "<i class='fa fa-clock-o'></i> <i>You pressed No...</i>",
+						color : "#C46A69",
+						iconSmall : "fa fa-times fa-2x fadeInRight animated",
+						timeout : 4000
+					});
+				}
+	
+			});
+			e.preventDefault();
+		})
+		
+		// With Input
+		$("#smart-mod-eg2").click(function(e) {
+	
+			$.SmartMessageBox({
+				title : "Smart Alert: Input",
+				content : "Please enter your user name",
+				buttons : "[Accept]",
+				input : "text",
+				placeholder : "Enter your user name"
+			}, function(ButtonPress, Value) {
+				alert(ButtonPress + " " + Value);
+			});
+	
+			e.preventDefault();
+		})
+		
+		// With Buttons
+		$("#smart-mod-eg3").click(function(e) {
+	
+			$.SmartMessageBox({
+				title : "Smart Notification: Buttons",
+				content : "Lots of buttons to go...",
+				buttons : '[Need?][You][Do][Buttons][Many][How]'
+			});
+	
+			e.preventDefault();
+		})
+		
+		// With Select
+		$("#smart-mod-eg4").click(function(e) {
+	
+			$.SmartMessageBox({
+				title : "Smart Alert: Select",
+				content : "You can even create a group of options.",
+				buttons : "[Done]",
+				input : "select",
+				options : "[Costa Rica][United States][Autralia][Spain]"
+			}, function(ButtonPress, Value) {
+				alert(ButtonPress + " " + Value);
+			});
+	
+			e.preventDefault();
+		});
+	
+		// With Login
+		$("#smart-mod-eg5").click(function(e) {
+	
+			$.SmartMessageBox({
+				title : "Login form",
+				content : "Please enter your user name",
+				buttons : "[Cancel][Accept]",
+				input : "text",
+				placeholder : "Enter your user name"
+			}, function(ButtonPress, Value) {
+				if (ButtonPress == "Cancel") {
+					alert("Why did you cancel that? :(");
+					return 0;
+				}
+	
+				Value1 = Value.toUpperCase();
+				ValueOriginal = Value;
+				$.SmartMessageBox({
+					title : "Hey! <strong>" + Value1 + ",</strong>",
+					content : "And now please provide your password:",
+					buttons : "[Login]",
+					input : "password",
+					placeholder : "Password"
+				}, function(ButtonPress, Value) {
+					alert("Username: " + ValueOriginal + " and your password is: " + Value);
+				});
+			});
+	
+			e.preventDefault();
+		});
+		
+	};
+	
+	// end pagefunction
+	
+	// load bootstrap-progress bar script and run pagefunction
+	loadScript("<?=BASE_URL?>js/plugin/bootstrap-progressbar/bootstrap-progressbar.min.js", pagefunction);
+
+</script>
+<script type="text/javascript">
+$ = jq341;
+var ON_TIMEOUT   = 0;   // time until next 'all on', calculated
+var LED_TIMEOUT  = 90;  // timeout for each led to turn off
+var OFF_DELAY    = 390; // timeout for leds turning off
+
+$(function() {
+  var leds = [];
+  
+  ON_TIMEOUT = OFF_DELAY;
+  $("div.led").each(function() {
+    ON_TIMEOUT += LED_TIMEOUT * 2;
+    leds.push(this);
+  });
+ 
+  $.each(leds, function() {
+    $(this).addClass("off");
+
+    // Instead of setInterval, this timer starts immediately.
+    (function() {
+      var startTimeout = LED_TIMEOUT;
+      for(var index = (leds.length - 1); index >= 0; index--) {
+        var $led = $(leds[index]);
+        $led.removeClass("off");
+        
+        (function() {
+          // grabbing the upvalue... 
+          var $led2 = $led;
+          setTimeout(function() {
+            $led2.addClass("off");
+          }, startTimeout + OFF_DELAY);
+        }());
+        
+        startTimeout += LED_TIMEOUT;
+      }
+      
+      setTimeout(arguments.callee, ON_TIMEOUT);
+    }());
+  });
+});
+</script>
 @endsection

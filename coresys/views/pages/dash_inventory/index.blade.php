@@ -46,56 +46,73 @@ hanzmobview{
 	  }
 	}
 </style>
-
-<!--<div class="row art-one">
-<hanzmobview>
-	<article class="btn-group col-sm-12">
-		<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
-			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>dashboard_merchant_internal" class="btn btn-default btn-circle btn-sm zoomsmall active">
-			<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbut.png" height="24" width="24" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Client Dashboard</small><br>
-					<small style="color:white;font-size:12px;">Client Dashboard Monitoring</small>
-				</p>
-			</a>
+	<div class="row">
+	<hanzmobview>
+		<article class="btn-group col-sm-12">
+			<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
+				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>master_inventory" class="btn btn-default btn-circle btn-sm zoomsmall active">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/building.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Count Inventory</small><br>
+						<small style="color:white;font-size:12px;">Dashboard Inventory</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>master_inventory" class="btn btn-default btn-circle btn-sm zoomsmall ">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/inventory3.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Inventory Stock</small><br>
+						<small style="color:white;font-size:12px;">Inventory Logistics</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>accesory_part" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/dataset.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Accesory Part</small><br>
+						<small style="color:white;font-size:12px;">List Accesory Part</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>transaction_in" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/incoming.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Transaction In</small><br>
+						<small style="color:white;font-size:12px;">Incoming Transaction</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>transaction_out" class="btn btn-default btn-circle zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/outgoing.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Transaction Out</small><br>
+						<small style="color:white;font-size:12px;">Outgoing Transaction</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>request_sparepart" class="btn btn-default btn-circle zoomsmall">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/db_add.png" height="26" width="26" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Request Part</small><br>
+						<small style="color:white;font-size:12px;">Incoming Request</small>
+					</p>
+				</a>
+				</div>
 			</div>
-			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>master_client" class="btn btn-default btn-circle btn-sm zoomsmall ">
-			<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbook.png" height="24" width="24" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Client & Customer </small><br>
-					<small style="color:white;font-size:12px;">Data Client & Customer </small>
-				</p>
-			</a>
-			</div>
-			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>master_atm" class="btn btn-default btn-circle zoomsmall">
-			<img style="float: left; margin: -1px 10px 0px 4px;" src="<?=base_url()?>seipkon/assets/img/atm2.png" height="24" width="24" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Data Mesin ATM</small><br>
-					<small style="color:white;font-size:12px;">Data Mesin ATM</small>
-				</p>
-			</a>
-			</div>
-			<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
-			<a href="<?=base_url()?>master_location" class="btn btn-default btn-circle btn-sm zoomsmall">
-			<img style="float: left; margin: -2px 10px 0px 3px;" src="<?=base_url()?>seipkon/assets/img/whiteloc.png" height="28" width="28" />
-				<p class="small" style="margin: -5px 0px 0px 0px;">
-					<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Area & Location</small><br>
-					<small style="color:white;font-size:12px;">Area & Location Coverage</small>
-				</p>
-			</a>
-			</div>			
-		</div>
-	</article>
-</hanzmobview>
-</div>-->
+		</article>
+	</hanzmobview>
+	</div>
 
 <section id="widget-grid">
 
 <div class="row">
-	<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -40px 0px;">
+	<article class="col-sm-12 col-md-12 col-lg-12" style="margin: -12px 0px -40px 0px;">
 		<div class="jarviswidget jarviswidget-color-purple" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-sortable="false" 
 		data-widget-colorbutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
 		<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
@@ -322,288 +339,10 @@ hanzmobview{
 											</div>
 										</article>									
 									</div>	
-								</div>
-								<div class="tab-content padding-top-10">
-									<div class="tab-pane fade in active" id="a1">
-										<div class="row">
-										<article class="col-sm-12 col-md-12 col-lg-6">
-										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Cash Delivery
-												</h2>
-											</header>
-											<div>
-												<div class="widget-body no-padding">
-												123
-													
-													
-												</div>
-											</div>
-										</div>
-										</article>									
-										<article class="col-sm-12 col-md-12 col-lg-6">
-										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Cash Pick-Up
-												</h2>
-											</header>
-											<div>
-												<div class="widget-body no-padding">
-												123
-													
-													
-												</div>
-											</div>
-										</div>
-										</article>
-										
-										</div>
-									</div>
-								</div>
-											
+								</div>			
 								
 							</div>
 							
-							<div class="col-sm-12 col-md-12 col-lg-4">
-								<div class="well well-light well-sm no-margin no-padding">
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-												<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-													<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-													<h2 style="color:white;font-size:14px; font-weight: bold;">Cash Delivery
-													</h2>
-												</header>
-												<div>
-													<div class="widget-body no-padding">
-													<style>
-													#chartdiv1 {
-													  width: 100%;
-													  height: 250px;
-													}
-													</style>
-													
-													<!-- Resources -->
-													<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-													<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-													<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-													<!-- Chart code -->
-													<script>
-													am4core.ready(function() {
-
-													// Themes begin
-													am4core.useTheme(am4themes_animated);
-													// Themes end
-
-													// Create chart instance
-													var chart = am4core.create("chartdiv1", am4charts.PieChart);
-
-													// Add data
-													chart.data = [ {
-													  "country": "Lithuania",
-													  "litres": 501.9
-													}, {
-													  "country": "UK",
-													  "litres": 99
-													}, {
-													  "country": "Germany",
-													  "litres": 60
-													}, {
-													  "country": "Belgium",
-													  "litres": 50
-													} ];
-
-													// Set inner radius
-													chart.innerRadius = am4core.percent(50);
-
-													// Add and configure Series
-													var pieSeries = chart.series.push(new am4charts.PieSeries());
-													pieSeries.dataFields.value = "litres";
-													pieSeries.dataFields.category = "country";
-													pieSeries.slices.template.stroke = am4core.color("#fff");
-													pieSeries.slices.template.strokeWidth = 2;
-													pieSeries.slices.template.strokeOpacity = 1;
-
-													// This creates initial animation
-													pieSeries.hiddenState.properties.opacity = 1;
-													pieSeries.hiddenState.properties.endAngle = -90;
-													pieSeries.hiddenState.properties.startAngle = -90;
-
-													}); // end am4core.ready()
-													</script>
-
-													<!-- HTML -->
-													<div id="chartdiv1"></div>
-													</div>
-												</div>
-											</div>
-										
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-
-											<hr>
-
-											<div class="" style="margin: -105px 0px 0px 0px;">
-
-												<ul class="nav nav-tabs tabs-pull-right">
-													<li class="pull-left active">
-														<a href="#a1" data-toggle="tab">Detail Data</a>
-													</li>
-												</ul>
-
-												<div class="tab-content padding-top-10">
-													<div class="tab-pane fade in active" id="a1">
-
-														<div class="row">
-														<style>
-														#chartdiv2 {
-														  width: 90%;
-														  height: 250px;
-														}
-														</style>
-														<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-														<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-														<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-														<script>
-														am4core.ready(function() {
-
-														// Themes begin
-														am4core.useTheme(am4themes_animated);
-														// Themes end
-
-														// Create chart instance
-														var chart = am4core.create("chartdiv2", am4charts.XYChart3D);
-
-														// Add data
-														chart.data = [{
-														  "country": "SENIN",
-														  "visits": 125
-														},{
-														  "country": "SELASA",
-														  "visits": 182
-														},{
-														  "country": "RABU",
-														  "visits": 130
-														},{
-														  "country": "KAMIS",
-														  "visits": 114
-														},{
-														  "country": "JUMAT",
-														  "visits": 98
-														},{
-														  "country": "SABTU",
-														  "visits": 98
-														},{
-														  "country": "MINGGU",
-														  "visits": 124
-														}];
-
-														// Create axes
-														let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-														categoryAxis.dataFields.category = "country";
-														categoryAxis.renderer.labels.template.rotation = 270;
-														categoryAxis.renderer.labels.template.hideOversized = false;
-														categoryAxis.renderer.minGridDistance = 10;
-														categoryAxis.renderer.labels.template.horizontalCenter = "right";
-														categoryAxis.renderer.labels.template.verticalCenter = "middle";
-														categoryAxis.tooltip.label.rotation = 270;
-														categoryAxis.tooltip.label.horizontalCenter = "right";
-														categoryAxis.tooltip.label.verticalCenter = "middle";
-
-														let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-														valueAxis.title.text = "Total Maintenance";
-														valueAxis.title.fontWeight = "bold";
-
-														// Create series
-														var series = chart.series.push(new am4charts.ColumnSeries3D());
-														series.dataFields.valueY = "visits";
-														series.dataFields.categoryX = "country";
-														series.name = "Visits";
-														series.tooltipText = "{categoryX}: [bold]{valueY}[/]";
-														series.columns.template.fillOpacity = .8;
-
-														var columnTemplate = series.columns.template;
-														columnTemplate.strokeWidth = 2;
-														columnTemplate.strokeOpacity = 1;
-														columnTemplate.stroke = am4core.color("#FFFFFF");
-
-														columnTemplate.adapter.add("fill", function(fill, target) {
-														  return chart.colors.getIndex(target.dataItem.index);
-														})
-
-														columnTemplate.adapter.add("stroke", function(stroke, target) {
-														  return chart.colors.getIndex(target.dataItem.index);
-														})
-
-														chart.cursor = new am4charts.XYCursor();
-														chart.cursor.lineX.strokeOpacity = 0;
-														chart.cursor.lineY.strokeOpacity = 0;
-
-														}); // end am4core.ready()
-														</script>
-
-														<div id="chartdiv2" style="margin: 0px 0px 0px 20px;"></div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									<div class="row">
-										<article class="col-sm-12 col-md-12 col-lg-12" style="margin:-20px 0px -30px 0px;">
-											<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-												<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-													<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
-													<h2 style="color:white;font-size:14px; font-weight: bold;">Transaction Sumarry
-													</h2>
-												</header>
-												<div>
-													<div class="widget-body no-padding">
-													<table class="table table-bordered table-condensed">
-														<thead>
-															<tr>
-																<th style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">Type/Method Of Transaction</th>
-																<th style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">Job Runsheet</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th style="background: #ffffff;font-size:12px">
-																	<ul id="legend">Said To Contain (STC)</ul>
-																</th>
-																<td style="background: #ffffff"><span id="">12</span></td>
-															</tr>
-															<tr>
-																<th style="background: #ffffff;font-size:12px">Bulk Bundle Count (BBC)</th>
-																<td style="background: #ffffff"><span id="">34</span></td>
-															</tr>
-															<tr>
-																<th style="background: #ffffff;font-size:12px">Count on Site (COS)</th>
-																<td style="background: #ffffff"><span id="">3</span></td>
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<th colspan="2" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;height:1px;"></th>
-															</tr>
-														</tfoot>
-													</table>
-													</div>
-												</div>
-											</div>
-										</article>									
-																					
-									</div>
-												
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>

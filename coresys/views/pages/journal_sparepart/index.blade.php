@@ -101,7 +101,7 @@ hanzmobview{
 		data-widget-colorbutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
 		<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
 			<span class="widget-icon"> <img style="float: left; margin: 10px 5px 0px 10px;" src="<?=base_url()?>assets/img/folset.png" height="15" width="15" /> </span>
-			<h2 style="color:white;font-size:14px; font-weight: bold;">Dashboard Inventory</h2>
+			<h2 style="color:white;font-size:14px; font-weight: bold;">Journal Sparepart &  Inventory</h2>
 		</header>
 		<div>
 			<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
@@ -186,7 +186,7 @@ hanzmobview{
 										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
 												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Stock
+												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Stock - NCR
 												</h2>
 											</header>
 											<div>
@@ -232,7 +232,7 @@ hanzmobview{
 										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
 												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Price
+												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Price - NCR
 												</h2>
 											</header>
 											<div>
@@ -355,7 +355,7 @@ hanzmobview{
 										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
 												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Stock
+												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Stock - DIEBOLD
 												</h2>
 											</header>
 											<div>
@@ -401,7 +401,7 @@ hanzmobview{
 										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
 											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
 												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Price
+												<h2 style="color:white;font-size:14px; font-weight: bold;">Total Price - DIEBOLD
 												</h2>
 											</header>
 											<div>

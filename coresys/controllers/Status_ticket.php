@@ -79,7 +79,7 @@ class Status_ticket extends MY_Controller {
 		
 		$atm = function($id, $field) {
 			error_reporting(0);
-			$atm = $this->db->query("SELECT $field FROM master_atm WHERE (id='$id' OR idatm='$id')")->row();
+			$atm = $this->db->query("SELECT $field FROM master_atm WHERE id='$id'")->row();
 			$atm = (array) $atm;
 			return $atm[$field];
 		};
@@ -120,8 +120,8 @@ class Status_ticket extends MY_Controller {
 					<td>
                         <table class="table display table-bordered" style="width: 100%">
 							<tr>
-								<td style="width: 120px">Ticket</td>
-								<td style="width: 10px"> : </td>
+								<td>Ticket</td>
+								<td> : </td>
 								<td>'.$d['ticket_id'].'</td>
 							</tr>
 							<tr>
@@ -144,8 +144,8 @@ class Status_ticket extends MY_Controller {
 					<td style="vertical-align: top">
                         <table class="table display table-bordered" style="width: 100%">
 							<tr>
-								<td style="width: 120px">Entry Date</td>
-								<td style="width: 10px"> : </td>
+								<td>Entry Date</td>
+								<td> : </td>
 								<td>'.date("d-m-Y", strtotime($d['entry_date'])).'</td>
 							</tr>
 							<tr>
@@ -212,7 +212,7 @@ class Status_ticket extends MY_Controller {
         
         $table .= '<br>
 			<div style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 0%, #1C1C1C 150%);">
-				<h4 style="color:white; padding: 16px">ISSUE TICKETS/PROBLEM TANGGAL : '.date("d-m-Y", strtotime($date)).'</h4>
+				<h4 style="color:white; padding: 16px; height:30px;"><p style="margin: -12px 0px 0px 0px; font-size:16px;font-weight:bold;">ISSUE TICKETS/PROBLEM TANGGAL : '.date("d-m-Y", strtotime($date)).'</p></h4>
 				<div class="view" style="margin-bottom: 20px">
 					<div class="wrapper" style="margin-top: 0px">
 						<table class="table display table-bordered" style="width: 100%">

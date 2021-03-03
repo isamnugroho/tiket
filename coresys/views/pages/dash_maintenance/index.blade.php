@@ -48,567 +48,527 @@ hanzmobview{
 	}
 </style>
 
+<div class="row">
+	<hanzmobview>
+		<article class="btn-group col-sm-12">
+			<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
+				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
+				<a href="dash_maintenance" class="btn btn-default btn-circle btn-sm zoomsmall active">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbook.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Summary Tickets</small><br>
+						<small style="color:white;font-size:12px;">Dashboard Maintenance</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-3" style="margin: 5px 0px 0px -40px;">
+				<a href="new_ticket" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/new-ticket.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">New Tickets</small><br>
+						<small style="color:white;font-size:12px;">New Issue Ticket</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-3" style="margin: 5px 0px 0px -80px;">
+				<a href="status_ticket" class="btn btn-default btn-circle btn-sm zoomsmall ">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/taskred.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Status Ticket</small><br>
+						<small style="color:white;font-size:12px;">Status Trouble Ticket</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px -40px;">
+				<a href="trouble_category" class="btn btn-default btn-circle zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/folset7.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Activity Type</small><br>
+						<small style="color:white;font-size:12px;">Activity Type Services</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 50px;">
+				<a href="trouble_sub_category" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/purpleset.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Problem Type</small><br>
+						<small style="color:white;font-size:12px;">Problem Type Services </small>
+					</p>
+				</a>
+				</div>			
+			</div>
+		</article>
+	</hanzmobview>
+	</div>
+	
 <section id="widget-grid">
 	<div class="row hrow-gap">
 	
-		<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -50px 0px;">
+		<article class="col-sm-12 col-md-12 col-lg-12" style="margin: -20px 0px -50px 0px;">
 			<div class="jarviswidget jarviswidget-color-purple" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-sortable="false" 
 			data-widget-colorbutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false">
 				<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
-					<h2 style="color:white;font-size:14px; font-weight: bold;">Dashboard - Bank Sulteng
+					<h2 style="color:white;font-size:14px; font-weight: bold;">Dashboard Maintenance
 					</h2>
 				</header>
 				<div>
 					<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
-
-      
-
-
-					
-					
-			<div class="jarviswidget jarviswidget-color-purple" id="wid-id-2"
-			data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" data-widget-sortable="false" 
-			data-widget-colorbutton="false" data-widget-deletebutton="false" style="margin: 0px 0px 0px 0px;">
-				<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);height:5px;">
-				</header>
-				<div>
-					<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
-					<div class="row">
-					
-					
-					
-				<div class="col-sm-12">
-				
-				
-					<div class="row">
-					
-						<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px;">
-							<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-							
-								<div style="background: linear-gradient(to bottom, #8e9eab, #eef2f3);height:75px;">
-									<div class="widget-body no-padding">
-										<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
-											<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #ff512f, #f09819);color;white; height:55px;">
-												<div class="panel-heading">
-													<a href="#" class="">
-													<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/new-ticket.png" height="35" width="35" />
-													<span class="menu-item-parent">
-													<p class="small" style="">
-														<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Total Tickets</small><br>
-														<small style="color:white;font-size:24px; font-weight: bold;">9</small>
-													</p>
-													</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
-											<div class="panel zoomsmall" style="background: linear-gradient(to top, #add100, #7b920a);color;white; height:55px;">
-												<div class="panel-heading">
-													<a href="#" class="">
-													<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
-													<span class="menu-item-parent">
-													<p class="small" style="">
-														<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Ticket Done</small><br>
-														<small style="color:white;font-size:24px; font-weight: bold;">9</small>
-													</p>
-													</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
-											<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #e52d27, #b31217);color;white; height:55px;">
-												<div class="panel-heading">
-													<a href="#" class="">
-													<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
-													<span class="menu-item-parent">
-													<p class="small" style="">
-														<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Ticket Pending</small><br>
-														<small style="color:white;font-size:24px; font-weight: bold;">9</small>
-													</p>
-													</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
-											<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #9d50bb, #6e48aa);color;white; height:55px;">
-												<div class="panel-heading">
-													<a href="#" class="">
-													<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
-													<span class="menu-item-parent">
-													<p class="small" style="">
-														<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Tickets Today</small><br>
-														<small style="color:white;font-size:24px; font-weight: bold;">9</small>
-													</p>
-													</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
-											<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #1d976c, #3bff84);color;white; height:55px;">
-												<div class="panel-heading">
-													<a href="#" class="">
-													<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
-													<span class="menu-item-parent">
-													<p class="small" style="">
-														<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Done Today</small><br>
-														<small style="color:white;font-size:24px; font-weight: bold;">9</small>
-													</p>
-													</span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
-											<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #e52d27, #b31217);color;white; height:55px;">
-												<div class="panel-heading">
-													<a href="#" class="">
-													<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
-													<span class="menu-item-parent">
-													<p class="small" style="">
-														<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Pending Today</small><br>
-														<small style="color:white;font-size:24px; font-weight: bold;">9</small>
-													</p>
-													</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>									
+	
+					<div class="jarviswidget jarviswidget-color-purple" id="wid-id-2"
+					data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" data-widget-sortable="false" 
+					data-widget-colorbutton="false" data-widget-deletebutton="false" style="margin: 0px 0px 0px 0px;">
+						
+						<div>
+							<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+							<div class="row">
 								
-						<div class="col-sm-12 col-md-12 col-lg-8" style="margin: -20px 0px 0px 0px;">
-							<div class="well well-light well-sm no-margin no-padding">
+							<div class="col-sm-12">
+								<div class="row">
 								
-								<div class="row">
-									<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -30px 0px;">
+									<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px;">
 										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">List Item Managed - Bank Sulteng
-												</h2>
-											</header>
-											<div>
+										
+											<div style="background: linear-gradient(to bottom, #8e9eab, #eef2f3);height:75px;">
 												<div class="widget-body no-padding">
-												<table class="table table-bordered table-condensed">
-													<thead>
-														<tr>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">REGIONAL</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">DIEBOLD</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">NCR</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CRM</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">YIHUA</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">TOTAL</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CSE</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
-																<ul id="legend">PALU</ul>
-															</th>
-															<td style="background: #ffffff"><span id="">26</span></td>
-															<td style="background: #ffffff"><span id="">12</span></td>
-															<td style="background: #ffffff"><span id="">0</span></td>
-															<td style="background: #ffffff"><span id="">0</span></td>
-															<td style="background: #ffffff"><span id="">38</span></td>
-															<td style="background: #ffffff"><span id="">YATNO</span></td>
-														</tr>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">MOROWALI</th>
-															<td style="background: #ffffff"><span id="">18</span></td>
-															<td style="background: #ffffff"><span id="">10</span></td>
-															<td style="background: #ffffff"><span id="">0</span></td>
-															<td style="background: #ffffff"><span id="">0</span></td>
-															<td style="background: #ffffff"><span id="">28</span></td>
-															<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
-														</tr>
-													</tbody>
-													<tfoot>
-														<tr>
-															<th colspan="7" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;height:1px;"></th>
-														</tr>
-													</tfoot>
-												</table>
-												</div>
-											</div>
-										</div>
-									</article>									
-								</div>
-								<div class="row">
-									<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -30px 0px;">
-										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Maintenance Sumarry & Information
-												</h2>
-											</header>
-											<div>
-												<div class="widget-body no-padding">
-												<table class="table table-bordered table-condensed">
-													<thead>
-														<tr>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ID TICKET</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ID ATM</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ACT / PROBLEM TYPE</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">STATUS</th>
-															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CSE</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
-																<ul id="legend">BST2102240001</ul>
-															</th>
-															<td style="background: #ffffff"><span id="">112233</span></td>
-															<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
-															<td style="background: #ffffff"><span id="">DONE</span></td>
-															<td style="background: #ffffff"><span id="">YATNO</span></td>
-														</tr>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">BST2102240001</th>
-															<td style="background: #ffffff"><span id="">223344</span></td>
-															<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
-															<td style="background: #ffffff"><span id="">PENDING</span></td>
-															<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
-														</tr>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
-																<ul id="legend">BST2102240001</ul>
-															</th>
-															<td style="background: #ffffff"><span id="">112233</span></td>
-															<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
-															<td style="background: #ffffff"><span id="">DONE</span></td>
-															<td style="background: #ffffff"><span id="">YATNO</span></td>
-														</tr>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">BST2102240001</th>
-															<td style="background: #ffffff"><span id="">223344</span></td>
-															<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
-															<td style="background: #ffffff"><span id="">PENDING</span></td>
-															<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
-														</tr>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
-																<ul id="legend">BST2102240001</ul>
-															</th>
-															<td style="background: #ffffff"><span id="">112233</span></td>
-															<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
-															<td style="background: #ffffff"><span id="">DONE</span></td>
-															<td style="background: #ffffff"><span id="">YATNO</span></td>
-														</tr>
-														<tr>
-															<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">BST2102240001</th>
-															<td style="background: #ffffff"><span id="">223344</span></td>
-															<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
-															<td style="background: #ffffff"><span id="">PENDING</span></td>
-															<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
-														</tr>
-														
-													</tbody>
-													<tfoot>
-														<tr>
-															<th colspan="7" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;height:1px;"></th>
-														</tr>
-													</tfoot>
-												</table>
-												</div>
-											</div>
-										</div>
-									</article>									
-								</div>	
-							</div>
-							<div class="tab-content padding-top-10">
-								<div class="tab-pane fade in active" id="a1">
-									<div class="row">
-									<article class="col-sm-12 col-md-12 col-lg-6">
-									<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-										<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-											<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-											<h2 style="color:white;font-size:14px; font-weight: bold;">Cash Delivery
-											</h2>
-										</header>
-										<div>
-											<div class="widget-body no-padding">
-											123
-												
-												
-											</div>
-										</div>
-									</div>
-									</article>									
-									<article class="col-sm-12 col-md-12 col-lg-6">
-									<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-										<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-											<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-											<h2 style="color:white;font-size:14px; font-weight: bold;">Cash Pick-Up
-											</h2>
-										</header>
-										<div>
-											<div class="widget-body no-padding">
-											123
-												
-												
-											</div>
-										</div>
-									</div>
-									</article>
-									
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-12 col-lg-4" style="margin: -20px 0px 0px 0px;">
-							<div class="well well-light well-sm no-margin no-padding">
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Grafik Maintenance Tickets
-												</h2>
-											</header>
-											<div>
-												<div class="widget-body no-padding">
-												<style>
-												#chartdiv1 {
-												  width: 100%;
-												  height: 250px;
-												}
-												</style>
-												
-												<!-- Resources -->
-												<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-												<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-												<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-												<!-- Chart code -->
-												<script>
-												am4core.ready(function() {
-
-												// Themes begin
-												am4core.useTheme(am4themes_animated);
-												// Themes end
-
-												// Create chart instance
-												var chart = am4core.create("chartdiv1", am4charts.PieChart);
-
-												// Add data
-												chart.data = [ {
-												  "Ticket": "Total",
-												  "tvalue": 15
-												}, {
-												  "Ticket": "Done",
-												  "tvalue": 7
-												}, {
-												  "Ticket": "Pending",
-												  "tvalue": 10
-												} ];
-
-												// Set inner radius
-												chart.innerRadius = am4core.percent(50);
-
-												// Add and configure Series
-												var pieSeries = chart.series.push(new am4charts.PieSeries());
-												pieSeries.dataFields.value = "tvalue";
-												pieSeries.dataFields.category = "Ticket";
-												pieSeries.slices.template.stroke = am4core.color("red");
-												pieSeries.slices.template.strokeWidth = 2;
-												pieSeries.slices.template.strokeOpacity = 1;
-
-												// This creates initial animation
-												pieSeries.hiddenState.properties.opacity = 1;
-												pieSeries.hiddenState.properties.endAngle = -90;
-												pieSeries.hiddenState.properties.startAngle = -90;
-
-												}); // end am4core.ready()
-												</script>
-
-												<!-- HTML -->
-												<div id="chartdiv1"></div>
-												</div>
-											</div>
-										</div>
-									
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<hr>
-										<div class="" style="margin: -105px 0px 0px 0px;">
-											<ul class="nav nav-tabs tabs-pull-right">
-												<li class="pull-left active">
-													<a href="#a1" data-toggle="tab">Detail Data</a>
-												</li>
-											</ul>
-											<div class="tab-content padding-top-10">
-												<div class="tab-pane fade in active" id="a1">
-
-													<div class="row">
-													<style>
-													#chartdiv2 {
-													  width: 90%;
-													  height: 250px;
-													}
-													</style>
-													<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-													<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-													<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-													<script>
-													am4core.ready(function() {
-
-													// Themes begin
-													am4core.useTheme(am4themes_animated);
-													// Themes end
-
-													// Create chart instance
-													var chart = am4core.create("chartdiv2", am4charts.XYChart3D);
-
-													// Add data
-													chart.data = [{
-													  "country": "SENIN",
-													  "visits": 125
-													},{
-													  "country": "SELASA",
-													  "visits": 182
-													},{
-													  "country": "RABU",
-													  "visits": 130
-													},{
-													  "country": "KAMIS",
-													  "visits": 114
-													},{
-													  "country": "JUMAT",
-													  "visits": 98
-													},{
-													  "country": "SABTU",
-													  "visits": 98
-													},{
-													  "country": "MINGGU",
-													  "visits": 124
-													}];
-
-													// Create axes
-													let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-													categoryAxis.dataFields.category = "country";
-													categoryAxis.renderer.labels.template.rotation = 270;
-													categoryAxis.renderer.labels.template.hideOversized = false;
-													categoryAxis.renderer.minGridDistance = 10;
-													categoryAxis.renderer.labels.template.horizontalCenter = "right";
-													categoryAxis.renderer.labels.template.verticalCenter = "middle";
-													categoryAxis.tooltip.label.rotation = 270;
-													categoryAxis.tooltip.label.horizontalCenter = "right";
-													categoryAxis.tooltip.label.verticalCenter = "middle";
-
-													let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-													valueAxis.title.text = "Total Maintenance";
-													valueAxis.title.fontWeight = "bold";
-
-													// Create series
-													var series = chart.series.push(new am4charts.ColumnSeries3D());
-													series.dataFields.valueY = "visits";
-													series.dataFields.categoryX = "country";
-													series.name = "Visits";
-													series.tooltipText = "{categoryX}: [bold]{valueY}[/]";
-													series.columns.template.fillOpacity = .8;
-
-													var columnTemplate = series.columns.template;
-													columnTemplate.strokeWidth = 2;
-													columnTemplate.strokeOpacity = 1;
-													columnTemplate.stroke = am4core.color("#FFFFFF");
-
-													columnTemplate.adapter.add("fill", function(fill, target) {
-													  return chart.colors.getIndex(target.dataItem.index);
-													})
-
-													columnTemplate.adapter.add("stroke", function(stroke, target) {
-													  return chart.colors.getIndex(target.dataItem.index);
-													})
-
-													chart.cursor = new am4charts.XYCursor();
-													chart.cursor.lineX.strokeOpacity = 0;
-													chart.cursor.lineY.strokeOpacity = 0;
-
-													}); // end am4core.ready()
-													</script>
-
-													<div id="chartdiv2" style="margin: 0px 0px 0px 20px;"></div>	
+													<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
+														<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #ff512f, #f09819);color;white; height:55px;">
+															<div class="panel-heading">
+																<a href="#" class="">
+																<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/new-ticket.png" height="35" width="35" />
+																<span class="menu-item-parent">
+																<p class="small" style="">
+																	<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Total Tickets</small><br>
+																	<small style="color:white;font-size:24px; font-weight: bold;">0</small>
+																</p>
+																</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
+														<div class="panel zoomsmall" style="background: linear-gradient(to top, #add100, #7b920a);color;white; height:55px;">
+															<div class="panel-heading">
+																<a href="#" class="">
+																<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
+																<span class="menu-item-parent">
+																<p class="small" style="">
+																	<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Ticket Done</small><br>
+																	<small style="color:white;font-size:24px; font-weight: bold;">0</small>
+																</p>
+																</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
+														<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #e52d27, #b31217);color;white; height:55px;">
+															<div class="panel-heading">
+																<a href="#" class="">
+																<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
+																<span class="menu-item-parent">
+																<p class="small" style="">
+																	<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Ticket Pending</small><br>
+																	<small style="color:white;font-size:24px; font-weight: bold;">0</small>
+																</p>
+																</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
+														<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #9d50bb, #6e48aa);color;white; height:55px;">
+															<div class="panel-heading">
+																<a href="#" class="">
+																<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
+																<span class="menu-item-parent">
+																<p class="small" style="">
+																	<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Tickets Today</small><br>
+																	<small style="color:white;font-size:24px; font-weight: bold;">0</small>
+																</p>
+																</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
+														<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #1d976c, #3bff84);color;white; height:55px;">
+															<div class="panel-heading">
+																<a href="#" class="">
+																<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
+																<span class="menu-item-parent">
+																<p class="small" style="">
+																	<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Done Today</small><br>
+																	<small style="color:white;font-size:24px; font-weight: bold;">0</small>
+																</p>
+																</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-12 col-sm-4 col-md-2" style="margin: 10px 0px 0px 0px;">
+														<div class="panel zoomsmall" style="background: linear-gradient(to bottom, #e52d27, #b31217);color;white; height:55px;">
+															<div class="panel-heading">
+																<a href="#" class="">
+																<img style="float: left; margin: 0px 5px 0px -5px;" src="<?=base_url()?>assets/img/filewhite.png" height="35" width="35" />
+																<span class="menu-item-parent">
+																<p class="small" style="">
+																	<small style="color:white;font-size:14px; font-weight: bold; margin: 0px 0px 0px 0px;">Pending Today</small><br>
+																	<small style="color:white;font-size:24px; font-weight: bold;">0</small>
+																</p>
+																</span>
+																</a>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<hr>
-										<div class="" style="margin: -65px 0px 0px 0px;">
-											<ul class="nav nav-tabs tabs-pull-right">
-												<li class="pull-left active">
-													<a href="#a1" data-toggle="tab">Detail Data</a>
-												</li>
-											</ul>
+										
+									</article>									
+											
+									<div class="col-sm-12 col-md-12 col-lg-8" style="margin: -20px 0px 0px 0px;">
+										<div class="well well-light well-sm no-margin no-padding">
+											
+											<div class="row">
+												<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -30px 0px;">
+													<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+														<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
+															<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
+															<h2 style="color:white;font-size:14px; font-weight: bold;">List Item Managed - Bank Sulteng
+															</h2>
+														</header>
+														<div>
+															<div class="widget-body no-padding">
+															<table class="table table-bordered table-condensed">
+																<thead>
+																	<tr>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">REGIONAL</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">DIEBOLD</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">NCR</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CRM</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">YIHUA</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">TOTAL</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CSE</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
+																			<ul id="legend">PALU</ul>
+																		</th>
+																		<td style="background: #ffffff"><span id="">26</span></td>
+																		<td style="background: #ffffff"><span id="">12</span></td>
+																		<td style="background: #ffffff"><span id="">0</span></td>
+																		<td style="background: #ffffff"><span id="">0</span></td>
+																		<td style="background: #ffffff"><span id="">38</span></td>
+																		<td style="background: #ffffff"><span id="">YATNO</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">MOROWALI</th>
+																		<td style="background: #ffffff"><span id="">18</span></td>
+																		<td style="background: #ffffff"><span id="">10</span></td>
+																		<td style="background: #ffffff"><span id="">0</span></td>
+																		<td style="background: #ffffff"><span id="">0</span></td>
+																		<td style="background: #ffffff"><span id="">28</span></td>
+																		<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
+																	</tr>
+																</tbody>
+																<tfoot>
+																	<tr>
+																		<th colspan="7" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;height:1px;"></th>
+																	</tr>
+																</tfoot>
+															</table>
+															</div>
+														</div>
+													</div>
+												</article>									
+											</div>
+											<div class="row">
+												<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -30px 0px;">
+													<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+														<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
+															<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
+															<h2 style="color:white;font-size:14px; font-weight: bold;">Maintenance Sumarry & Information
+															</h2>
+														</header>
+														<div>
+															<div class="widget-body no-padding">
+															<table class="table table-bordered table-condensed">
+																<thead>
+																	<tr>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ID TICKET</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ID ATM</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ACT / PROBLEM TYPE</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">STATUS</th>
+																		<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CSE</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
+																			<ul id="legend">BST2102240001</ul>
+																		</th>
+																		<td style="background: #ffffff"><span id="">112233</span></td>
+																		<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
+																		<td style="background: #ffffff"><span id="">DONE</span></td>
+																		<td style="background: #ffffff"><span id="">YATNO</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">BST2102240001</th>
+																		<td style="background: #ffffff"><span id="">223344</span></td>
+																		<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
+																		<td style="background: #ffffff"><span id="">PENDING</span></td>
+																		<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
+																			<ul id="legend">BST2102240001</ul>
+																		</th>
+																		<td style="background: #ffffff"><span id="">112233</span></td>
+																		<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
+																		<td style="background: #ffffff"><span id="">DONE</span></td>
+																		<td style="background: #ffffff"><span id="">YATNO</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">BST2102240001</th>
+																		<td style="background: #ffffff"><span id="">223344</span></td>
+																		<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
+																		<td style="background: #ffffff"><span id="">PENDING</span></td>
+																		<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">
+																			<ul id="legend">BST2102240001</ul>
+																		</th>
+																		<td style="background: #ffffff"><span id="">112233</span></td>
+																		<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
+																		<td style="background: #ffffff"><span id="">DONE</span></td>
+																		<td style="background: #ffffff"><span id="">YATNO</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);font-size:12px">BST2102240001</th>
+																		<td style="background: #ffffff"><span id="">223344</span></td>
+																		<td style="background: #ffffff"><span id="">Perawatan Berkala (Preventive Maintenance) / PM - ATM</span></td>
+																		<td style="background: #ffffff"><span id="">PENDING</span></td>
+																		<td style="background: #ffffff"><span id="">IRFAN BAHRI</span></td>
+																	</tr>
+																	
+																</tbody>
+																<tfoot>
+																	<tr>
+																		<th colspan="7" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;height:1px;"></th>
+																	</tr>
+																</tfoot>
+															</table>
+															</div>
+														</div>
+													</div>
+												</article>									
+											</div>	
 										</div>
+										
 									</div>
-								</div>
-								<!--<div class="row">
-									<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -30px 0px;">
-										<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-											<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
-												<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
-												<h2 style="color:white;font-size:14px; font-weight: bold;">Transaction Sumarry
-												</h2>
-											</header>
-											<div>
-												<div class="widget-body no-padding">
-												<table class="table table-bordered table-condensed">
-													<thead>
-														<tr>
-															<th style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">Type/Method Of Transaction</th>
-															<th style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">Job Runsheet</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<th style="background: #ffffff;font-size:12px">
-																<ul id="legend">Said To Contain (STC)</ul>
-															</th>
-															<td style="background: #ffffff"><span id="">12</span></td>
-														</tr>
-														<tr>
-															<th style="background: #ffffff;font-size:12px">Bulk Bundle Count (BBC)</th>
-															<td style="background: #ffffff"><span id="">34</span></td>
-														</tr>
-														<tr>
-															<th style="background: #ffffff;font-size:12px">Count on Site (COS)</th>
-															<td style="background: #ffffff"><span id="">3</span></td>
-														</tr>
-													</tbody>
-													<tfoot>
-														<tr>
-															<th colspan="2" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;height:1px;"></th>
-														</tr>
-													</tfoot>
-												</table>
+									<div class="col-sm-12 col-md-12 col-lg-4" style="margin: -20px 0px 0px 0px;">
+										<div class="well well-light well-sm no-margin no-padding">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+														<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
+															<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/calendar2.png" height="18" width="18" /> </span>
+															<h2 style="color:white;font-size:14px; font-weight: bold;">Grafik Maintenance Tickets
+															</h2>
+														</header>
+														<div>
+															<div class="widget-body no-padding">
+								<link rel="stylesheet" href="<?=BASE_URL?>v153/radial2/style.css">
+								<section class="row">
+								  <div class="column">
+									<div class="donut-chart" data-donut-chart="1" style="margin: -5px 0px 0px 60px;"></div>
+								  </div>
+								</section>
+								<script  src="<?=BASE_URL?>v153/radial2/script.js"></script>															
+															
+															
+															</div>
+														</div>
+													</div>
+												
 												</div>
 											</div>
+											<div class="row">
+												<div class="col-sm-12">
+													<hr>
+													<div class="" style="margin: -105px 0px 0px 0px;">
+														<ul class="nav nav-tabs tabs-pull-right">
+															<li class="pull-left active">
+																<a href="#a1" data-toggle="tab">Detail Data</a>
+															</li>
+														</ul>
+														<div class="tab-content padding-top-10">
+															<div class="tab-pane fade in active" id="a1">
+
+																<div class="row">
+																<style>
+																#chartdiv2 {
+																  width: 90%;
+																  height: 250px;
+																}
+																</style>
+																<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+																<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+																<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+																<script>
+																am4core.ready(function() {
+
+																// Themes begin
+																am4core.useTheme(am4themes_animated);
+																// Themes end
+
+																// Create chart instance
+																var chart = am4core.create("chartdiv2", am4charts.XYChart3D);
+
+																// Add data
+																chart.data = [{
+																  "country": "SENIN",
+																  "visits": 125
+																},{
+																  "country": "SELASA",
+																  "visits": 182
+																},{
+																  "country": "RABU",
+																  "visits": 130
+																},{
+																  "country": "KAMIS",
+																  "visits": 114
+																},{
+																  "country": "JUMAT",
+																  "visits": 98
+																},{
+																  "country": "SABTU",
+																  "visits": 98
+																},{
+																  "country": "MINGGU",
+																  "visits": 124
+																}];
+
+																// Create axes
+																let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+																categoryAxis.dataFields.category = "country";
+																categoryAxis.renderer.labels.template.rotation = 270;
+																categoryAxis.renderer.labels.template.hideOversized = false;
+																categoryAxis.renderer.minGridDistance = 10;
+																categoryAxis.renderer.labels.template.horizontalCenter = "right";
+																categoryAxis.renderer.labels.template.verticalCenter = "middle";
+																categoryAxis.tooltip.label.rotation = 270;
+																categoryAxis.tooltip.label.horizontalCenter = "right";
+																categoryAxis.tooltip.label.verticalCenter = "middle";
+
+																let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+																valueAxis.title.text = "Total Maintenance";
+																valueAxis.title.fontWeight = "bold";
+
+																// Create series
+																var series = chart.series.push(new am4charts.ColumnSeries3D());
+																series.dataFields.valueY = "visits";
+																series.dataFields.categoryX = "country";
+																series.name = "Visits";
+																series.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+																series.columns.template.fillOpacity = .8;
+
+																var columnTemplate = series.columns.template;
+																columnTemplate.strokeWidth = 2;
+																columnTemplate.strokeOpacity = 1;
+																columnTemplate.stroke = am4core.color("#FFFFFF");
+
+																columnTemplate.adapter.add("fill", function(fill, target) {
+																  return chart.colors.getIndex(target.dataItem.index);
+																})
+
+																columnTemplate.adapter.add("stroke", function(stroke, target) {
+																  return chart.colors.getIndex(target.dataItem.index);
+																})
+
+																chart.cursor = new am4charts.XYCursor();
+																chart.cursor.lineX.strokeOpacity = 0;
+																chart.cursor.lineY.strokeOpacity = 0;
+
+																}); // end am4core.ready()
+																</script>
+
+																<div id="chartdiv2" style="margin: 0px 0px 0px 20px;"></div>	
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-12">
+													<hr>
+													<div class="" style="margin: -65px 0px 0px 0px;">
+														<ul class="nav nav-tabs tabs-pull-right">
+															<li class="pull-left active">
+																<a href="#a1" data-toggle="tab">Detail Data</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!--<div class="row">
+												<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px -30px 0px;">
+													<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+														<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
+															<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/cal.png" height="18" width="18" /> </span>
+															<h2 style="color:white;font-size:14px; font-weight: bold;">Transaction Sumarry
+															</h2>
+														</header>
+														<div>
+															<div class="widget-body no-padding">
+															<table class="table table-bordered table-condensed">
+																<thead>
+																	<tr>
+																		<th style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">Type/Method Of Transaction</th>
+																		<th style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">Job Runsheet</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<th style="background: #ffffff;font-size:12px">
+																			<ul id="legend">Said To Contain (STC)</ul>
+																		</th>
+																		<td style="background: #ffffff"><span id="">12</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background: #ffffff;font-size:12px">Bulk Bundle Count (BBC)</th>
+																		<td style="background: #ffffff"><span id="">34</span></td>
+																	</tr>
+																	<tr>
+																		<th style="background: #ffffff;font-size:12px">Count on Site (COS)</th>
+																		<td style="background: #ffffff"><span id="">3</span></td>
+																	</tr>
+																</tbody>
+																<tfoot>
+																	<tr>
+																		<th colspan="2" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;height:1px;"></th>
+																	</tr>
+																</tfoot>
+															</table>
+															</div>
+														</div>
+													</div>
+												</article>									
+																							
+											</div>-->		
 										</div>
-									</article>									
-																				
-								</div>-->		
+									</div>
+								</div>
+							
 							</div>
 						</div>
-					</div>
-				
-				</div>
-			</div>
-				
+							
 						
 					
 					</div>

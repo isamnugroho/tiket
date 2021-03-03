@@ -82,7 +82,7 @@ class Trans_schedule extends MY_Controller {
 		// if($search!="") {
 		$search = "%".strtolower($search)."%";
 		// }
-		$query = "SELECT * FROM master_staff LEFT JOIN master_user ON(master_staff.nik=master_user.username) WHERE master_user.level='CSE' AND master_staff.id NOT IN (SELECT id_petugas FROM trans_schedule) AND (master_staff.nik LIKE '$search' OR master_staff.nama LIKE '$search' OR master_user.username LIKE '$search')";
+		$query = "SELECT * FROM master_staff WHERE id NOT IN (SELECT id_petugas FROM trans_schedule) AND (nik LIKE '$search' OR nama LIKE '$search' OR username LIKE '$search')";
 		$result = $this->db->query($query)->result();
 		
 		$list = array();
@@ -90,7 +90,7 @@ class Trans_schedule extends MY_Controller {
 			$key=0;
 			foreach ($result as $row) {
 				$list[$key]['id'] = $row->id;
-				$list[$key]['text'] = $row->nik.' - '.$row->nama; 
+				$list[$key]['text'] = $row->nik.' - '.$row->username; 
 				$key++;
 			}
 			echo json_encode($list);

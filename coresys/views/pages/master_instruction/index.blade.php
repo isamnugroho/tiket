@@ -272,7 +272,6 @@
 																						<td><img style="margin: -5px 0px 0px 0px;" src="<?=base_url()?>assets/img/clean.png" height="15" width="15" /></td>
 																					</tr>
 																					<tr>
-																					<tr>
 																						<td>Tickets Open Today</td>
 																						<td><img style="margin: -5px 0px 0px 0px;" src="<?=base_url()?>assets/img/clean.png" height="15" width="15" /></td>
 																					</tr>
@@ -309,7 +308,6 @@
 																						<td><img style="margin: -5px 0px 0px 0px;" src="<?=base_url()?>assets/img/clean.png" height="15" width="15" /></td>
 																					</tr>
 																					<tr>
-																					<tr>
 																						<td>Tickets Open Today</td>
 																						<td><img style="margin: -5px 0px 0px 0px;" src="<?=base_url()?>assets/img/clean.png" height="15" width="15" /></td>
 																					</tr>
@@ -326,9 +324,9 @@
 																		</div>
 																	</div>
 																
-																	</div>
 																</div>
 															</div>
+													
 									
 										
 								
@@ -366,13 +364,13 @@
 													<div class="tab-pane" id="hr2">
 						
 														<div class="tabbable tabs-below">
-														35466</div>
+														35466
+														</div>
 						
 													</div>
 												</div>
 						
 											</div>
-						
 										</div>
 							
 										</div>
@@ -402,10 +400,8 @@
 				
 			</div>
 		</div>
-	</article>
+		</article>
 	</div>	
-	
-	
 	
 </div>
 <!-- end widget content -->
