@@ -100,31 +100,49 @@
 	<div class="row">
 	<hanzmobview>
 		<article class="btn-group col-sm-12">
-			<div class="navbar navbar-default" style="background-image: linear-gradient( 176.4deg,rgba(237,135,33,1) 28.8%, rgba(244,62,62,1) 99% );border-radius: 5px 5px 0px 0px;">
-				<div class="col-sm-5" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>master_inventory" class="btn btn-default btn-circle btn-sm zoomsmall">
+			<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
+				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
+				<a href="<?=base_url()?>servicepoint_inventory" class="btn btn-default btn-circle btn-sm zoomsmall">
 				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/inventory3.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Inventory Stock</small><br>
-						<small style="color:white;font-size:12px;">Inventory Logistics</small>
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Service Point Stock</small><br>
+						<small style="color:white;font-size:12px;">Service Point Stock Inventory</small>
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-5" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>transaction_in" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<div class="col-sm-2" style="margin: 5px 40px 0px -30px;">
+				<a href="<?=base_url()?>transaction_in_sp" class="btn btn-default btn-circle btn-sm zoomsmall ">
 				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/incoming.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Transaction In</small><br>
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">SP Transaction In</small><br>
 						<small style="color:white;font-size:12px;">Incoming Transaction</small>
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
-				<a href="<?=base_url()?>transaction_out" class="btn btn-default btn-circle zoomsmall active">
+				<div class="col-sm-3" style="margin: 5px 20px 0px 0px;">
+				<a href="<?=base_url()?>transaction_out_sp" class="btn btn-default btn-circle zoomsmall active">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/outgoing.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Transaction Out</small><br>
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">SP Transaction Out</small><br>
 						<small style="color:white;font-size:12px;">Outgoing Transaction</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px -40px;">
+				<a href="<?=base_url()?>outgoing_request" class="btn btn-default btn-circle zoomsmall">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/db_add.png" height="26" width="26" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Request Part</small><br>
+						<small style="color:white;font-size:12px;">Outgoing Request</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-2" style="margin: 5px 0px 0px 10px;">
+				<a href="<?=base_url()?>sp_return_bad" class="btn btn-default btn-circle zoomsmall">
+				<img style="float: left; margin: -2px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/db_add.png" height="26" width="26" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Return Bad</small><br>
+						<small style="color:white;font-size:12px;">Return Bad Sparepart</small>
 					</p>
 				</a>
 				</div>
@@ -163,9 +181,9 @@
 					data-widget-sortable="false"
 
 					-->
-					<header style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 0%, #1C1C1C 150%);">
-						<span class="widget-icon"><img style="float: left; margin: 8px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/outgoing.png" height="18" width="18" /></span>
-						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data Transaction Out</b></h2>
+					<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
+					
+						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Service Point Transaction Out</b></h2>
 					</header>
 
 					<!-- widget div-->

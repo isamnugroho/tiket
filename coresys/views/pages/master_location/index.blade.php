@@ -138,39 +138,30 @@
 				data-widget-togglebutton="false"
 				data-widget-fullscreenbutton="false"
 				data-widget-deletebutton="false"
-				data-widget-sortable="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"
-
-					-->
+				data-widget-sortable="false"
+				data-widget-editbutton="false">
+					
+					
 					<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
 						
 						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Area & Location</b></h2>
+						<span class="ribbon-button-alignment pull-right" style="margin: -22px 2px 0px 0px; "> 
+						<section>
+						<a onclick="createModal()" class="btn btn-default btn-xs pull-right zoomsmall" style="float:left; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); border-radius: 4px; margin: 14px 0px 0px 0px;height:28px; width:210px">
+						<img style="float: left; margin: 2px 5px 0px 0px;" src="<?=base_url()?>seipkon/assets/img/adddata.png" height="20" width="20" />
+						<p class="small" style="margin: 6px 0px 0px 0px; ">
+							<small style="color:black;font-size:12px; font-weight: bold;">Tambah Data Coverage Area</small>
+						</p>
+						</a>
+						</section>
+						</span>					
+					
 					</header>
 
-					<!-- widget div-->
+					
+					
 					<div>
 
-						<!-- widget edit box -->
-						<div class="jarviswidget-editbox">
-							<!-- This area used as dropdown edit box -->
-							<a onclick="createModal()" class="btn btn-primary pull-right" style="border-radius: 5px;">
-								<img style="float: left; margin: 0px 5px 0px 0px;" src="<?=base_url()?>seipkon/assets/img/adddata.png" height="20" width="20" />
-								<b>Tambah Data Coverage Area</b>
-							</a>
-						</div>
-						<!-- end widget edit box -->
-
-						<!-- widget content -->
 						<div class="widget-body no-padding">
 
 							<table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
@@ -209,7 +200,7 @@
 		<div class="container content_form" hidden>
 			<form action="<?=base_url()?>master_location/insert" class="formName">
 				<div class="form-group">
-					<label>Masukan Data Lokasi</label>
+					<label>Masukkan Data Lokasi</label>
 					<input type="text" placeholder="Data Lokasi" class="name form-control" required />
 				</div>
 			</form>

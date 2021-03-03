@@ -151,58 +151,42 @@ hanzmobview{
 	<!-- widget grid -->
 	<section id="widget-grid" class="">
 
-		<!-- row -->
+	
 		<div class="row">
 			
-			<!-- NEW WIDGET START -->
 			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: -20px 0px 0px 0px;">
 
-				<!-- Widget ID (each widget will need unique ID)-->
-				<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-colorbutton="false" 								  data-widget-togglebutton="false"										  data-widget-fullscreenbutton="false"
+				<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-colorbutton="false" data-widget-togglebutton="false"										  data-widget-fullscreenbutton="false"
 				data-widget-deletebutton="false"
-				data-widget-sortable="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"
-
-					-->
+				data-widget-sortable="false"
+				data-widget-editbutton="false">
+					
 					<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
 						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data Mesin ATM</b></h2>
-					</header>
-
-					<!-- widget div-->
-					<div>
-
-						<!-- widget edit box -->
-						<div class="jarviswidget-editbox">
-							<!-- This area used as dropdown edit box -->
-							<a onclick="createModal()" class="btn btn-primary pull-right" style="border-radius: 5px;">
-								<img style="float: left; margin: 0px 5px 0px 0px;" src="<?=base_url()?>seipkon/assets/img/adddata.png" height="20" width="20" />
-								<b>Pilih Client/Bank</b>
-							</a>
-							
-							<select id="select_client" class="form-control pull-right" style="width: 22%;">
-								<option value="">Pilih Client/Bank</option>
-								<?php 
-									foreach($client as $r) {
-										echo '<option value="'.$r->id.'">'.$r->nama.'</option>';
-									}
-								?>
+						
+						<span class="ribbon-button-alignment pull-right" style="margin: -22px 2px 0px 0px; "> 
+						<section>
+						<a onclick="createModal()" class="btn btn-default btn-xs pull-right zoomsmall" style="float:left; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); border-radius: 4px; margin: 14px 0px 0px 0px;height:28px; width:200px">
+						<img style="float: left; margin: 2px 5px 0px 0px;" src="<?=base_url()?>seipkon/assets/img/adddata.png" height="20" width="20" />
+						<!--<b style="margin: 0px 0px 0px 0px;font-size:12px">Pilih & Tambah Client/Bank</b>-->	
+						<p class="small" style="margin: 6px 0px 0px 0px; ">
+							<small style="color:black;font-size:12px; font-weight: bold;">Pilih & Tambah Client/Bank</small>
+						</p>
+						</a>
+							<select id="select_client" class="form-control pull-right" style="margin: 14px 2px 0px 0px; width: 180px;height:28px">
+							<option value="">Pilih Client/Bank</option>
+							<?php 
+								foreach($client as $r) {
+									echo '<option value="'.$r->id.'">'.$r->nama.'</option>';
+								}
+							?>
 							</select>
-						</div>
-						<!-- end widget edit box -->
-
-						<!-- widget content -->
+						</section>
+						</span>
+					</header>
+					
+					<div>
 						<div class="widget-body no-padding">
-
 							<table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
 								<thead>			                
 									<tr>
@@ -222,129 +206,128 @@ hanzmobview{
 								<tbody>
 								</tbody>
 							</table>
-
 						</div>
-						<!-- end widget content -->
-
 					</div>
-					<!-- end widget div -->
-
 				</div>
-				<!-- end widget -->
-
 			</article>
-			<!-- WIDGET END -->
-			
-			
 
 		</div>
 
-		<!-- end row -->
-
-		<!-- end row -->
 		
 		<div class="container content_maps" hidden>
 			<input id="searchInput" class="controls" type="text" placeholder="Enter a location">
 			<div id="w3docs-map" class="w3docs-map" style="width: 100%;height: 480px; display: none"></div>
 		</div>
 		
-		<div class="container content_form" hidden>
 		
-		<div style="width: 100%; text-align: right">
-				<button class="btn btn-info" onclick="openModalZ()">OPEN MAP</button>
-		</div>
-			<center>
-				<form action="<?=base_url().explode("/", $that->uri->uri_string())[0].'/insert'?>" style="width: 95%; text-align: left">
-				
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">ID ATM :</label>
-								<input type="text" placeholder="" class="form-control" id="idatm" name="idatm" value="" required>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Area Service Coverage :</label>
-								<input type="text" placeholder="" class="form-control" id="cabang" name="cabang" value="" required>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Lokasi Mesin ATM :</label>
-								<input type="text" placeholder="" class="form-control" id="lokasi" name="lokasi" value="" required>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Merk Mesin :</label>
-								<input type="text" placeholder="" class="form-control" id="merk_mesin" name="merk_mesin" value="" required>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Type Mesin :</label>
-								<input type="text" placeholder="" class="form-control" id="type_mesin" name="type_mesin" value="" required>
-							</div>
-						</div>
-						
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">SN Mesin :</label>
-								<input type="text" placeholder="" class="form-control" id="sn_mesin" name="sn_mesin" value="" required>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Foto Mesin ATM :</label>
-								<input type="file" placeholder="" class="form-control" id="foto" name="foto" value="" >
-							</div>	
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Status :</label>
-								<div id="slWrapper" class="parsley-select wd-250">
-									<select class="form-control" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" id="status" name="status" required>
-										<option value="">Choose...</option>
-										<option>ON</option>
-										<option>OFF</option>
-									</select>
-									<div id="slErrorContainer"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Data Latitude :</label>
-								<input type="text" placeholder="" class="form-control latitude" id="latitude" name="latitude" value="" >
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Data Longitude :</label>
-								<input type="text" placeholder="" class="form-control longitude" id="longitude" name="longitude" value="" >
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<label class="control-label">Alamat:</label>
-								<textarea class="form-control" id="alamat" name="alamat" value="" required></textarea>
-							</div>
-						</div>
-					</div>
-				</form>
-			</center>
+			<article class="col-sm-12 col-md-12 col-lg-12 container content_form" hidden>
+			<div class="jarviswidget jarviswidget-color-purple" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" data-widget-sortable="false" 
+			data-widget-colorbutton="false" data-widget-deletebutton="false">
+				<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
+					<span class="widget-icon"> <img style="float: left; margin: 10px 5px 0px 10px;" src="<?=base_url()?>assets/img/adddata.png" height="15" width="15" /> </span>
+					<h2 style="color:white;font-size:14px; font-weight: bold;">Tambah Data Mesin ATM
+					</h2>
 
-				
-		</div>
+				</header>
+				<div>
+					<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+						
+						<div style="width: 100%; text-align: right">
+								<button class="btn btn-info" onclick="openModalZ()">OPEN MAP</button>
+						</div>
+						<center>
+							<form action="<?=base_url().explode("/", $that->uri->uri_string())[0].'/insert'?>" style="width: 95%; text-align: left;">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">ID ATM :</label>
+											<input type="text" placeholder="" class="form-control" id="idatm" name="idatm" value="" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Area Service Coverage :</label>
+											<input type="text" placeholder="" class="form-control" id="cabang" name="cabang" value="" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Lokasi Mesin ATM :</label>
+											<input type="text" placeholder="" class="form-control" id="lokasi" name="lokasi" value="" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Merk Mesin :</label>
+											<input type="text" placeholder="" class="form-control" id="merk_mesin" name="merk_mesin" value="" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Type Mesin :</label>
+											<input type="text" placeholder="" class="form-control" id="type_mesin" name="type_mesin" value="" required>
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">SN Mesin :</label>
+											<input type="text" placeholder="" class="form-control" id="sn_mesin" name="sn_mesin" value="" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Foto Mesin ATM :</label>
+											<input type="file" placeholder="" class="form-control" id="foto" name="foto" value="" >
+										</div>	
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Status :</label>
+											<div id="slWrapper" class="parsley-select wd-250">
+												<select class="form-control" data-placeholder="Choose one" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" id="status" name="status" required>
+													<option value="">Choose...</option>
+													<option>ON</option>
+													<option>OFF</option>
+												</select>
+												<div id="slErrorContainer"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Data Latitude :</label>
+											<input type="text" placeholder="" class="form-control latitude" id="latitude" name="latitude" value="" >
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">Data Longitude :</label>
+											<input type="text" placeholder="" class="form-control longitude" id="longitude" name="longitude" value="" >
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label class="control-label">Alamat:</label>
+											<textarea class="form-control" id="alamat" name="alamat" value="" required></textarea>
+										</div>
+									</div>
+								</div>
+							</form>
+						</center>
+					</div>
+				</div>
+			</div>
+			</article>	
+		
 
 	</section>
 @endsection

@@ -74,7 +74,7 @@ class Service extends REST_Controller {
 
 		$query = "
 			SELECT master_atm.*, master_ticket.*, master_ticket.id as ids, master_client.nama as nama_bank FROM master_ticket
-			LEFT JOIN master_atm ON(master_atm.idatm=master_ticket.atm_id)
+			LEFT JOIN master_atm ON(master_atm.id=master_ticket.atm_id)
 			LEFT JOIN master_client ON(master_client.id=master_atm.id_bank)
 			WHERE master_ticket.pic='".$id_user."' AND accept_time IS NULL
 		";
@@ -192,79 +192,6 @@ class Service extends REST_Controller {
 		
 		if($tz=="WIB") {
 			$this->db->set('accept_time', $date);
-			$this->db->set('updated', 'true');
-			$this->db->where('id', $id);
-			$res = $this->db->update('master_ticket');
-
-			if($res) {
-				echo "success";
-			} else {
-				echo "failed";
-			}
-		} else {
-			echo "INVALID TIME DEVICE!";
-		}
-	}
-	
-	function arrive_job_get() {
-		$id = $this->input->get('id');
-		$date = $this->input->get('date');
-		$id_user = $this->input->get('id_user');
-		$id_lokasi = $this->input->get('id_lokasi');
-		
-		$tz = $this->validate_date($date);
-		
-		if($tz=="WIB") {
-			$this->db->set('arrival_time', $date);
-			$this->db->set('updated', 'true');
-			$this->db->where('id', $id);
-			$res = $this->db->update('master_ticket');
-
-			if($res) {
-				echo "success";
-			} else {
-				echo "failed";
-			}
-		} else {
-			echo "INVALID TIME DEVICE!";
-		}
-	}
-	
-	function stop_waiting_get() {
-		$id = $this->input->get('id');
-		$date = $this->input->get('date');
-		$time = $this->input->get('time');
-		$id_user = $this->input->get('id_user');
-		$id_lokasi = $this->input->get('id_lokasi');
-		
-		$tz = $this->validate_date($date);
-		
-		if($tz=="WIB") {
-			$this->db->set('waiting_time', $time);
-			$this->db->set('updated', 'true');
-			$this->db->where('id', $id);
-			$res = $this->db->update('master_ticket');
-
-			if($res) {
-				echo "success";
-			} else {
-				echo "failed";
-			}
-		} else {
-			echo "INVALID TIME DEVICE!";
-		}
-	}
-	
-	function start_job_get() {
-		$id = $this->input->get('id');
-		$date = $this->input->get('date');
-		$id_user = $this->input->get('id_user');
-		$id_lokasi = $this->input->get('id_lokasi');
-		
-		$tz = $this->validate_date($date);
-		
-		if($tz=="WIB") {
-			$this->db->set('start_job', $date);
 			$this->db->set('updated', 'true');
 			$this->db->where('id', $id);
 			$res = $this->db->update('master_ticket');
@@ -467,7 +394,7 @@ class Service extends REST_Controller {
 		// ";
 		$query = "
 			SELECT master_atm.*, master_ticket.*, master_ticket.id as ids, master_client.nama as nama_bank FROM master_ticket
-			LEFT JOIN master_atm ON(master_atm.idatm=master_ticket.atm_id)
+			LEFT JOIN master_atm ON(master_atm.id=master_ticket.atm_id)
 			LEFT JOIN master_client ON(master_client.id=master_atm.id_bank)
 			WHERE master_ticket.pic='$id_user' AND master_ticket.id='$id'
 		";
@@ -657,47 +584,6 @@ class Service extends REST_Controller {
 		$this->db->set('updated', 'true');
 		$this->db->where('id', $id_detail);
 		$res = $this->db->update('master_ticket');
-		
-		if($res) {
-			echo "success";
-		} else {
-			echo "failed";
-		}
-	}
-	
-	function save_akomodation_post() {
-		// print_r($this->input->post());
-		
-		$id_user = $this->input->post('id_user');
-		$id_detail = $this->input->post('id_detail');
-		$data_save = $this->input->post('data_save');
-		
-		$ticket_id = $this->db->query("SELECT ticket_id FROM master_ticket WHERE id='$id_detail'")->row()->ticket_id;
-		
-		$data['ticket_id'] = $ticket_id;
-		$data['detail'] = $data_save;
-		
-		$this->db->where('ticket_id', $ticket_id);
-		$q = $this->db->get('finance_akomodation');
-		if ($q->num_rows() > 0) {
-			$this->db->where('ticket_id', $ticket_id);
-			$res = $this->db->update('finance_akomodation', $data);
-		} else {
-			$this->db->set('ticket_id', $ticket_id);
-			$res = $this->db->insert('finance_akomodation', $data);
-		}
-		
-		// $saved = json_decode($data_save, true);
-		
-		// if($saved['status']!=='pending-sparepart' || $saved['status']!=='pending-pekerjaan') {
-			// $this->db->set('end_job', date("Y-m-d H:i:s"));
-		// }
-		// $this->db->set('status', $saved['status']);
-		// $this->db->set('action_taken', json_encode($saved));
-		// $this->db->set('remark', $saved['remark']);
-		// $this->db->set('updated', 'true');
-		// $this->db->where('id', $id_detail);
-		// $res = $this->db->update('master_ticket');
 		
 		if($res) {
 			echo "success";

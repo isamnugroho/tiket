@@ -107,7 +107,7 @@ hanzmobview{
 <div class="row art-one">
 <hanzmobview>
 	<article class="btn-group col-sm-12">
-		<div class="navbar navbar-default" style="background-image: linear-gradient( 176.4deg,rgba(237,135,33,1) 28.8%, rgba(244,62,62,1) 99% );border-radius: 5px 5px 0px 0px;">
+		<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
 			<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
 			<a href="<?=base_url()?>dashboard_merchant_internal" class="btn btn-default btn-circle btn-sm zoomsmall">
 			<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbut.png" height="24" width="24" />
@@ -178,7 +178,7 @@ hanzmobview{
 					data-widget-sortable="false"
 
 					-->
-					<header style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 0%, #1C1C1C 150%);">
+					<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
 						<span class="widget-icon"><img style="float: left; margin: 8px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/whiteloc.png" height="18" width="18" /></span>
 						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Detail Area & Location</b></h2>
 					</header>

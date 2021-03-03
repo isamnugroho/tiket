@@ -871,8 +871,8 @@
 																	}
 
 																	.shadow {
-																		-webkit-filter: drop-shadow( 0px 1px 1px rgba(0,0,0,.3) );
-																		filter: drop-shadow( 0px 1px 1px rgba(0,0,0,.3) );
+																		-webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
+																		filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.5) );
 																	}
 																</style>
 																<center>
@@ -1227,7 +1227,7 @@
                 })
                 .style({
                     fill:'#fff',
-                    'font-size':'18px'
+                    'font-size':'10px'
                 });
 
         var legendRectSize=20;
@@ -1267,7 +1267,7 @@
                     return d;
                 }).style({
                     fill:'#929DAF',
-                    'font-size':'18px'
+                    'font-size':'14px'
                 });
     };
 

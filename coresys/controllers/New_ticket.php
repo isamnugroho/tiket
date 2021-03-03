@@ -309,17 +309,10 @@ class New_ticket extends MY_Controller {
 
     function select_pic() {
         $search = $this->input->post('search');
-        $atm_id = $this->input->post('atm_id');
-		
-		$id_bank = $this->db->query("SELECT id_bank FROM master_atm WHERE idatm='$atm_id'")->row()->id_bank;
 		// if($search!="") {
 		$search = "%".strtolower($search)."%";
 		// }
-		$query = "SELECT * FROM master_staff 
-					LEFT JOIN master_user ON (master_staff.nik=master_user.username) 
-					LEFT JOIN trans_schedule ON (trans_schedule.id_petugas=master_user.id)
-					LEFT JOIN master_atm ON (master_atm.id_lokasi=trans_schedule.id_lokasi)
-					WHERE master_user.level='cse' AND (master_staff.nama LIKE '$search')";
+		$query = "SELECT * FROM master_staff LEFT JOIN master_user ON (master_staff.nik=master_user.username) WHERE master_user.level='cse' AND (master_staff.nama LIKE '$search')";
 		$result = $this->db->query($query)->result();
 		
 		$list = array();
@@ -327,7 +320,7 @@ class New_ticket extends MY_Controller {
 			$key=0;
 			foreach ($result as $row) {
 				$list[$key]['id'] = $row->id;
-				$list[$key]['text'] = $row->nik." - ".$row->nama." - ".$id_bank; 
+				$list[$key]['text'] = $row->nik." - ".$row->nama; 
 				$key++;
 			}
 			echo json_encode($list);
@@ -439,8 +432,8 @@ class New_ticket extends MY_Controller {
                 $rows->problem_type,
                 $rows->entry_date,
                 '<center>
-                    <a onclick="deleteAction(\''.$url.'/delete/'.$rows->id.'\')" class="btn btn-danger mr-1">
-                        <img style="float: left; margin: 3px 5px 0px 0px; height:18px; width:18px; " src="'.base_url().'seipkon/assets/img/delete.png"/>
+                    <a onclick="deleteAction(\''.$url.'/delete/'.$rows->id.'\')" class="btn btn-danger mr-1 zoomsmall" style="background: linear-gradient(to top, #ed213a, #93291e);border-radius: 4px;font-weight:bold;">
+                        <img style="float: left; margin: 1px 5px 0px 0px; height:18px; width:18px; " src="'.base_url().'seipkon/assets/img/del.png"/>
                         Delete
                     </a>
 				 </center>'

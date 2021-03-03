@@ -102,24 +102,33 @@
 		<article class="btn-group col-sm-12">
 			<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
 				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-				<a href="new_ticket" class="btn btn-default btn-circle btn-sm zoomsmall active">
-				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/new-ticket.png" height="24" width="24" />
+				<a href="dash_maintenance" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbook.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">New Issue Tickets</small><br>
-						<small style="color:white;font-size:12px;">New Troubleshoot Ticket</small>
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Summary Tickets</small><br>
+						<small style="color:white;font-size:12px;">Dashboard Maintenance</small>
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
+				<div class="col-sm-3" style="margin: 5px 0px 0px -40px;">
+				<a href="new_ticket" class="btn btn-default btn-circle btn-sm zoomsmall active">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/new-ticket.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">New Tickets</small><br>
+						<small style="color:white;font-size:12px;">New Issue Ticket</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-3" style="margin: 5px 0px 0px -80px;">
 				<a href="status_ticket" class="btn btn-default btn-circle btn-sm zoomsmall ">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/taskred.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
 						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Status Ticket</small><br>
-						<small style="color:white;font-size:12px;">Status Troubleshoot Ticket</small>
+						<small style="color:white;font-size:12px;">Status Trouble Ticket</small>
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
+				<div class="col-sm-2" style="margin: 5px 0px 0px -40px;">
 				<a href="trouble_category" class="btn btn-default btn-circle zoomsmall">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/folset7.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
@@ -128,7 +137,7 @@
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<div class="col-sm-2" style="margin: 5px 0px 0px 50px;">
 				<a href="trouble_sub_category" class="btn btn-default btn-circle btn-sm zoomsmall">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/purpleset.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
@@ -155,35 +164,25 @@
 					data-widget-togglebutton="false"
 					data-widget-fullscreenbutton="false"
 					data-widget-deletebutton="false"
-					data-widget-sortable="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
 					data-widget-sortable="false"
-
-					-->
+					data-widget-editbutton="false"
+					>
+					
 					<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
 						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data New Issue Tickets</b></h2>
+						
 					</header>
-
-					<!-- widget div-->
+					<span class="ribbon-button-alignment pull-right" style="margin: -42px 180px 0px 0px; "> 
+					<section>	
+						<button class="btn btn-primary pull-right zoomsmall"  data-toggle="modal" data-target="#myModal" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);border-radius: 4px;width: 100%;height:30px;color:black"><img style="float: left; margin: -2px 5px 0px 0px;" src="<?=base_url()?>assets/img/tikopen.png" height="20" width="20" /><b>Tambah New Ticket</b></button>
+					</section>	
+					</span>
+					<span class="ribbon-button-alignment pull-right" style="margin: -42px 0px 0px 0px; "> 
+					<section>	
+						<a onclick="createModal()" class="btn btn-primary pull-right zoomsmall" style="background: linear-gradient(to top, #ed213a, #93291e);border-radius: 4px;width: 100%;height:30px"><img style="float: left; margin: -2px 5px 0px 0px;" src="<?=base_url()?>assets/img/tikopen.png" height="20" width="20" /><b>Tambah New Ticket</b></a>
+					</section>	
+					</span>
 					<div>
-
-						<!-- widget edit box -->
-						<div class="jarviswidget-editbox">
-							<!-- This area used as dropdown edit box -->
-							<a onclick="createModal()" class="btn btn-primary pull-right" style="border-radius: 5px;"><img style="float: left; margin: 0px 5px 0px 0px;" src="<?=base_url()?>seipkon/assets/img/adddata.png" height="20" width="20" /><b>Tambah News Broadcast</b></a>
-						</div>
-						<!-- end widget edit box -->
-
-						<!-- widget content -->
 						<div class="widget-body no-padding">
 
 							<table id="dt_basic" class="table table-striped table-bordered table-hover" width="100%">
@@ -221,49 +220,425 @@
 		</div>
 
 		<!-- end row -->
-
-		<div class="container content_form" hidden>
-			<form action="<?=base_url()?>new_ticket/insert" class="formName">
-				<center><h5 style="font-weight: bold">CREATE NEW ISSUE TICKET <br>TICKET NUMBER : <span id="id_ticket">-</span></h5></center><br>
-				<input type="hidden" placeholder="" class="ticket_id form-control" required />
-				<div class="form-group">
-					<label>ID ATM</label>
-					<select class="form-control idatm" id="idatm" required="">
-						<option value="">-- Select ATM --</option>
-					</select>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white; height:40px;">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h5 style="color:white; margin: -8px 0px 0px 0px;"><b><img style="float: left; margin: -4px 5px -10px 0px;" src="<?=base_url()?>assets/img/new-ticket.png" height="18" width="18" /> Data New Issue Tickets</b></h5>
+					</div>
+					<div class="modal-body">
+						
+						<div class="widget-body no-padding" style="margin: -10px 0px 0px 0px;">
+							<ul id="myTab1" class="nav nav-tabs bordered">
+								<li class="active">
+									<a href="#s1" data-toggle="tab">
+									<span class="widget-icon"> <img style="float: left; margin: 0px 5px 0px 0px;" src="<?=base_url()?>assets/img/cal.png" height="20" width="22" /> </span>
+									Reported Today</a>
+								</li>
+								<li>
+									<a href="#s2" data-toggle="tab">
+									<span class="widget-icon"> <img style="float: left; margin: 0px 5px 0px 0px;" src="<?=base_url()?>assets/img/calendar2.png" height="17" width="17" /> </span>
+									Report On Previous Day</a>
+								</li>
+							</ul>
+	
+							<div id="myTabContent1" class="tab-content padding-10">
+								<div class="tab-pane fade in active" id="s1">
+									<form action="<?=base_url()?>new_ticket/insert" class="formName">
+										<center><h5 style="font-weight: bold">CREATE NEW ISSUE TICKET TODAY<br>TICKET NUMBER : <span id="id_ticket">-</span></h5></center><br>
+										<input type="hidden" placeholder="" class="ticket_id form-control" required />
+										<div  style="margin: -20px 0px 0px 0px;" class="jarviswidget jarviswidget-color-blueLight" id="wid-id-12" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+											<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);height:30px;">
+												<h2 style="font-size:12px; font-weight: bold;"><p class="small" style="margin: 8px 0px 0px 0px;">
+												<small style="color:white;font-size:12px;  font-weight: bold;">FORM CREATE NEW TICKET</small></p>
+												</h2>
+											</header>
+											<div>
+												<div class="widget-body no-padding"  style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+												<table class="table table-bordered table-condensed">
+													<thead>
+														<tr>
+															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">TICKET INFORMATION</th>
+															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ISSUE REPORTED</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+															<div class="form-group">
+																<label>ID ATM</label>
+																<select class="form-control idatm" id="idatm" required="">
+																	<option value="">-- Select ATM --</option>
+																</select>
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>REPORTED BY</label>
+																<input type="text" placeholder="Reported By" class="reported_by form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<div class="form-group">
+															<label>EMAIL DATE</label>
+															<input type="text" placeholder="Email Date" class="email_date form-control" required />
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>EMAIL PIC</label>
+																<input type="text" placeholder="Email PIC" class="reported_by form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<div class="form-group">
+																<label>REPORTED PROBLEM</label>
+																<input type="text" placeholder="Reported Problem" class="reported_problem form-control" required />
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>NO HP PIC</label>
+																<input type="text" placeholder="PIC Contact" class="reported_by form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2">
+															<div class="form-group" style="height:20px;">
+																<label>REPORTED METHOD</label>
+																	<input type="checkbox" name="checkbox-inline" checked="checked" style="margin: 10px 0px 0px 20px;">
+																	<i></i>BY EMAIL
+																	<input type="checkbox" name="checkbox-inline" style="margin: 10px 0px 0px 20px;">
+																	<i></i>BY PHONE
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2">
+															<div class="form-group">
+																<label>SERVICE TYPE</label>
+																<select class="form-control pic" id="pic" required="">
+																	<option value="">-- Select Service Type --</option>
+																</select>
+															</div>
+															</td>
+														</tr>
+													</tbody>
+													<thead>
+														<tr>
+															<th colspan="2" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CUSTOMER SUPPORT ENGINEER</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="2">
+															<div class="form-group">
+																<label>ASSIGN CSE</label>
+																<select class="form-control pic" id="pic" required="">
+																	<option value="">-- Select CSE --</option>
+																</select>
+															</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot>
+														<tr>
+															<th colspan="2" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;height:1px;"></th>
+														</tr>
+													</tfoot>
+												</table>
+											
+												
+													
+												</div>
+											</div>
+										</div>
+							
+												
+									</form>
+									
+								</div>
+								<div class="tab-pane fade" id="s2">
+									<form action="<?=base_url()?>new_ticket/insert" class="formName">
+										<center><h5 style="font-weight: bold">CREATE NEW ISSUE TICKET PREVIOUS DAY</center><br><br>
+										<input type="hidden" placeholder="" class="ticket_id form-control" required />
+										<div  style="margin: 10px 0px 0px 0px;" class="jarviswidget jarviswidget-color-blueLight" id="wid-id-12" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+											<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);height:30px;">
+												<h2 style="font-size:12px; font-weight: bold;"><p class="small" style="margin: 8px 0px 0px 0px;">
+												<small style="color:white;font-size:12px;  font-weight: bold;">FORM CREATE NEW TICKET</small></p>
+												</h2>
+											</header>
+											<div>
+												<div class="widget-body no-padding"  style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
+												<table class="table table-bordered table-condensed">
+													<thead>
+														<tr>
+															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">TICKET INFORMATION</th>
+															<th style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">ISSUE REPORTED</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+															<div class="form-group">
+																<label>ID TICKET</label>
+																<input type="text" placeholder="ID Ticket" class="reported_problem form-control" required />
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>REPORTED PROBLEM</label>
+																<input type="text" placeholder="Reported Problem" class="reported_problem form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<div class="form-group">
+																<label>ID ATM</label>
+																<select class="form-control idatm" id="idatm" required="">
+																	<option value="">-- Select ATM --</option>
+																</select>
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>REPORTED BY</label>
+																<input type="text" placeholder="Reported By" class="reported_by form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<div class="form-group">
+															<label>EMAIL DATE</label>
+															<input type="text" placeholder="Email Date" class="email_date form-control" required />
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>EMAIL PIC</label>
+																<input type="text" placeholder="Email PIC" class="reported_by form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															<div class="form-group">
+																<label>JAM EMAIL/CALL</label>
+																<input type="text" placeholder="00:00" class="reported_problem form-control" required />
+															</div>
+															</td>
+															<td>
+															<div class="form-group">
+																<label>NO HP PIC</label>
+																<input type="text" placeholder="PIC Contact" class="reported_by form-control" required />
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2">
+															<div class="form-group" style="height:20px;">
+																<label>REPORTED METHOD</label>
+																	<input type="checkbox" name="checkbox-inline" checked="checked" style="margin: 10px 0px 0px 20px;">
+																	<i></i>BY EMAIL
+																	<input type="checkbox" name="checkbox-inline" style="margin: 10px 0px 0px 20px;">
+																	<i></i>BY PHONE
+															</div>
+															</td>
+														</tr>
+														<tr>
+															<td colspan="2">
+															<div class="form-group">
+																<label>SERVICE TYPE</label>
+																<select class="form-control pic" id="pic" required="">
+																	<option value="">-- Select Service Type --</option>
+																</select>
+															</div>
+															</td>
+														</tr>
+													</tbody>
+													<thead>
+														<tr>
+															<th colspan="2" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;">CUSTOMER SUPPORT ENGINEER</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="2">
+															<div class="form-group">
+																<label>ASSIGN CSE</label>
+																<select class="form-control pic" id="pic" required="">
+																	<option value="">-- Select CSE --</option>
+																</select>
+															</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot>
+														<tr>
+															<th colspan="2" style="background: linear-gradient(to bottom, #00c6ff, #0072ff);color:white;height:1px;"></th>
+														</tr>
+													</tfoot>
+												</table>
+											
+												
+													
+												</div>
+											</div>
+										</div>
+							
+												
+									</form>
+									
+								</div>
+							</div>
+								
+						</div>
+						
+					</div>
+					<div class="modal-footer" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white; height:30px;">
+						
+					
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+		
+		
+				<div class="container content_form" hidden>
+		<div class="row">
+		
+		
+		
+		
+		
+			<article class="col-sm-12 col-md-12 col-lg-12">
+				<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+					<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
+						<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/new-ticket.png" height="18" width="18" /> </span>
+						<h2 style="color:white;font-size:14px; font-weight: bold;">New Ticket
+						</h2>
+					</header>
+					<div>
+						<div class="widget-body">
+							<form action="<?=base_url()?>new_ticket/insert" class="formName">
+								<center><h5 style="font-weight: bold">CREATE NEW ISSUE TICKET <br>TICKET NUMBER : <span id="id_ticket">-</span></h5></center><br>
+                                <input type="hidden" placeholder="" class="ticket_id form-control" required />
+								<div class="form-group">
+                					<label>ID ATM</label>
+                					<select class="form-control idatm" id="idatm" required="">
+                						<option value="">-- Select ATM --</option>
+                					</select>
+                				</div>
+                				<div class="form-group">
+                					<label>EMAIL DATE</label>
+                					<input type="text" placeholder="Email Date" class="email_date form-control" required />
+                				</div>
+                				<div class="form-group">
+                					<label>REPORTED PROBLEM</label>
+                					<input type="text" placeholder="Reported Problem" class="reported_problem form-control" required />
+                				</div>
+                				<div class="form-group">
+                					<label>REPORTED BY</label>
+                					<input type="text" placeholder="Reported By" class="reported_by form-control" required />
+                				</div>
+                				<div class="form-group">
+                					<label>SERVICE TYPE</label>
+                					<select name="service_type[]" class="easyui-validatebox service_type" style="width: 100%" required>
+                						<option value="">-- Select type --</option>
+                					</select>
+                				</div>
+                				<div class="form-group">
+                					<label>C S E</label>
+                					<select class="form-control pic" id="pic" required="">
+                						<option value="">-- Select PIC --</option>
+                					</select>
+                				</div>
+                				<!--<div class="form-group">
+                					<label>PART REPLACEMENT</label>
+                					<select multiple name="part[]"  class="form-control part" id="part" required="">
+                						<option value="">-- Select Part --</option>
+                					</select>
+                				</div>-->
+							</form>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<label>EMAIL DATE</label>
-					<input type="text" placeholder="Email Date" class="email_date form-control" required />
-				</div>
-				<div class="form-group">
-					<label>REPORTED PROBLEM</label>
-					<input type="text" placeholder="Reported Problem" class="reported_problem form-control" required />
-				</div>
-				<div class="form-group">
-					<label>REPORTED BY</label>
-					<input type="text" placeholder="Reported By" class="reported_by form-control" required />
-				</div>
-				<div class="form-group">
-					<label>SERVICE TYPE</label>
-					<select name="service_type[]" class="easyui-validatebox service_type" style="width: 100%" required>
-						<option value="">-- Select type --</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label>PIC</label>
-					<select class="form-control pic" id="pic" required="">
-						<option value="">-- Select PIC --</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label>PART REPLACEMENT</label>
-					<select multiple name="part[]"  class="form-control part" id="part" required="">
-						<option value="">-- Select Part --</option>
-					</select>
-				</div>
-			</form>
+			</article>		
 		</div>
+
+		
+		</div>
+
+		
+		
+		
+		<!--<div class="container content_form" hidden style="width:100%">
+		<div class="row">
+			<article class="col-sm-12 col-md-12 col-lg-12">
+				<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+					<header style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );color:white;">
+						<span class="widget-icon"> <img style="float: left; margin: 7px 5px 0px 8px;" src="<?=base_url()?>assets/img/new-ticket.png" height="18" width="18" /> </span>
+						<h2 style="color:white;font-size:14px; font-weight: bold;">New Ticket
+						</h2>
+					</header>
+					<div>
+						<div class="widget-body no-padding">
+						<div class="col-xs-12 col-sm-4 col-md-12" style="margin: 0px 0px 0px 0px;">
+							<form action="<?=base_url()?>new_ticket/insert" class="formName">
+								<center><h5 style="font-weight: bold">CREATE NEW ISSUE TICKET <br>TICKET NUMBER : <span id="id_ticket">-</span></h5></center><br>
+
+								<div class="form-group">
+									<label>ID ATM</label>
+									<select class="form-control idatm" id="idatm" required="">
+										<option value="">-- Select ATM --</option>
+									</select>
+								</div>
+								<label>ID TICKET (Auto)</label>
+								<input type="text" placeholder="ID Tickets" class="ticket_id form-control" required /><br>
+								<div class="form-group">
+									<label>EMAIL DATE</label>
+									<input type="text" placeholder="Email Date" class="email_date form-control" required />
+								</div>
+								<div class="form-group">
+									<label>PROBLEM TYPE</label>
+									<select multiple name="problem_type[]" class="easyui-validatebox problem_type" style="width: 100%" required>
+										<option value="">-- Select Problem --</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>C S E</label>
+									<select class="form-control pic" id="pic" required="">
+										<option value="">-- Select PIC --</option>
+									</select>
+								</div>
+								<div class="form-group" hidden>
+									<label>PART REPLACEMENT</label>
+									<select multiple name="part[]"  class="form-control part" id="part" required="">
+										<option value="">-- Select Part --</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</article>		
+		</div>
+
+		
+		</div>-->
 
 	</section>
 	<!-- end widget grid -->
@@ -371,13 +746,13 @@
 					},
 					"pageLength" : 10,
 					"serverSide": true,
-					"order": [[1, "desc" ]],
+					"order": [[1, "asc" ]],
 					"columnDefs": [{"orderable": false, "targets": 0}],
 					"ajax":{
 						url : base_url + 'new_ticket/get_data',
 						type : 'POST',
 						dataFilter: function(data) {
-							// console.log(data);
+							console.log(data);
 							var json = jQuery.parseJSON( data );
 							json.recordsTotal = json.recordsTotal;
 							json.recordsFiltered = json.recordsFiltered;
@@ -392,7 +767,6 @@
 
 		};
 
-		var global_id = 0;
 		function createModal() {
 			var content = $('.content_form').clone().html();
 
@@ -413,11 +787,9 @@
 							var idatm = this.$content.find('.idatm').val();
 							var ticket_id = this.$content.find('.ticket_id').val();
 							var email_date = this.$content.find('.email_date').val();
-							var service_type = this.$content.find('.service_type').val();
-							var reported_problem = this.$content.find('.reported_problem').val();
-							var reported_by = this.$content.find('.reported_by').val();
+							var problem_type = this.$content.find('.problem_type').val();
 							var pic = this.$content.find('.pic').val();
-							if(!service_type){ $.alert('provide a valid service_type'); return false; }
+							if(!problem_type){ $.alert('provide a valid problem_type'); return false; }
 							if(!pic){ $.alert('provide a valid pic'); return false; }
 
 							var data = {
@@ -425,13 +797,11 @@
 								idatm: idatm,
 								ticket_id: ticket_id,
 								email_date: email_date,
-								service_type: service_type,
-								reported_problem: reported_problem,
-								reported_by: reported_by,
+								problem_type: problem_type,
 								pic: pic
 							};
 
-							// self.showLoading();
+							self.showLoading();
 
 							$.ajax({
 								url: url,
@@ -440,7 +810,6 @@
 								data: data,
 								timeout: 3000,
 							}).done(function (response) {
-								console.log(response);
 								
 								if(response.status=="exist") {
 									self.hideLoading();
@@ -499,9 +868,9 @@
 						var data = $(this).select2('data');
 						var value = data[0].id;
 						var text = data[0].text;
-						alert(value);
+						// alert(value);
 						// alert(text);
-						global_id = value;
+						
 
 						url = "<?=base_url()?>new_ticket/get_ticket";
 						$.ajax({
@@ -518,7 +887,7 @@
 						});
 					});;
 
-					this.$content.find('.service_type').select2({
+					this.$content.find('.problem_type').select2({
 						tags: false, tokenSeparators: [','], width: '100%',
 						ajax: {
 							dataType: 'json',
@@ -551,8 +920,7 @@
 							type: "POST",
 							data: function(params) {
 								return {
-									search: params.term,
-									atm_id: global_id
+									search: params.term
 								}
 							},
 							processResults: function (data, page) {

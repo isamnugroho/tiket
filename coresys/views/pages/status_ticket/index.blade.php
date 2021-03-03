@@ -97,29 +97,38 @@
 	  }
 	}
 	</style>
-	<div class="row">
+<div class="row">
 	<hanzmobview>
 		<article class="btn-group col-sm-12">
 			<div class="navbar navbar-default" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 0px 0px;">
 				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
-				<a href="new_ticket" class="btn btn-default btn-circle btn-sm zoomsmall">
-				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/new-ticket.png" height="24" width="24" />
+				<a href="dash_maintenance" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/blackbook.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
-						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">New Issue Tickets</small><br>
-						<small style="color:white;font-size:12px;">New Troubleshoot Ticket</small>
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Summary Tickets</small><br>
+						<small style="color:white;font-size:12px;">Dashboard Maintenance</small>
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
+				<div class="col-sm-3" style="margin: 5px 0px 0px -40px;">
+				<a href="new_ticket" class="btn btn-default btn-circle btn-sm zoomsmall">
+				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/new-ticket.png" height="24" width="24" />
+					<p class="small" style="margin: -5px 0px 0px 0px;">
+						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">New Tickets</small><br>
+						<small style="color:white;font-size:12px;">New Issue Ticket</small>
+					</p>
+				</a>
+				</div>
+				<div class="col-sm-3" style="margin: 5px 0px 0px -80px;">
 				<a href="status_ticket" class="btn btn-default btn-circle btn-sm zoomsmall active">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/taskred.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
 						<small style="color:white;font-size:16px; margin: 0px 0px 0px 0px; font-weight: bold;">Status Ticket</small><br>
-						<small style="color:white;font-size:12px;">Status Troubleshoot Ticket</small>
+						<small style="color:white;font-size:12px;">Status Trouble Ticket</small>
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-3" style="margin: 5px 0px 0px 0px;">
+				<div class="col-sm-2" style="margin: 5px 0px 0px -40px;">
 				<a href="trouble_category" class="btn btn-default btn-circle zoomsmall">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/folset7.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
@@ -128,7 +137,7 @@
 					</p>
 				</a>
 				</div>
-				<div class="col-sm-2" style="margin: 5px 0px 0px 0px;">
+				<div class="col-sm-2" style="margin: 5px 0px 0px 50px;">
 				<a href="trouble_sub_category" class="btn btn-default btn-circle btn-sm zoomsmall">
 				<img style="float: left; margin: -1px 10px 0px 5px;" src="<?=base_url()?>seipkon/assets/img/purpleset.png" height="24" width="24" />
 					<p class="small" style="margin: -5px 0px 0px 0px;">
@@ -141,7 +150,6 @@
 		</article>
 	</hanzmobview>
 	</div>
-	<!-- widget grid -->
 	<section id="widget-grid" class="">
 		<!-- row -->
 		<div class="row">
@@ -156,19 +164,7 @@
 					data-widget-fullscreenbutton="false"
 					data-widget-deletebutton="false"
 					data-widget-sortable="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"
-
-					-->
+				
 					<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
 						
 						<h2 style="color:white; margin: -1px 0px 0px 10px;"><b>Data Status Tickets</b></h2>
@@ -195,7 +191,7 @@
 						<!-- widget content -->
 						<div class="widget-body no-padding">
 
-							<div class="table display table-bordered" id="content_table">
+							<div class="table display table-bordered" id="content_table" style="margin: -30px 0px 0px 0px;">
 								<div>
 								
 								</div>

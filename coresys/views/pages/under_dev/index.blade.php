@@ -5,345 +5,87 @@
 
 
 @section('content')
-<style>
-.hrow-gap1{
-margin: 20px 0px 0px 0px;
-}
-.hrow-gap2{
-margin: -30px 0px 0px 0px;
-}
-.hrow-gap3{
-margin: -30px 0px 0px 0px;
-}
 
-hanzmobview{
-  display: inline;
-}
-@media screen and (max-width: 1024px){
-hanzmobview{
-    display: none;
-  }
-.art-one{
-  padding: 10px;
-  }
-
-}
-</style>
-<style>
-	hanzmobview{
-	  margin: 0 auto;
-	}
-	hanzmobview{
-	  display: inline;
-	}
-
-	@media screen and (max-width: 1024px){
-	hanzmobview{
-		display: none;
-	  }
-	article{
-	  padding: 20px;
-	  }
-	}
-</style>
-
-
-<section id="widget-grid">
-	<div class="row hrow-gap">
 	
-		<article class="col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px;">
-			<div class="jarviswidget jarviswidget-color-purple" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" data-widget-sortable="false" 
-			data-widget-colorbutton="false" data-widget-deletebutton="false">
-				<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);">
-					<span class="widget-icon"> <img style="float: left; margin: 10px 5px 0px 10px;" src="<?=base_url()?>assets/img/start.png" height="15" width="15" /> </span>
-					<h2 style="color:white;font-size:14px; font-weight: bold;">Client Dashboard Monitoring
-					</h2>
+<section id="widget-grid">
 
+
+        <!-- Web fonts and Web Icons -->
+        <link rel="stylesheet" href="<?=BASE_URL?>v154/css/pageloader.css">
+        <link rel="stylesheet" href="<?=BASE_URL?>v154/fonts/opensans/stylesheet.css">
+        
+        <!-- Vendor CSS style -->
+        <link rel="stylesheet" href="<?=BASE_URL?>v154/js/vendor/jquery.fullPage.css">
+        <link rel="stylesheet" href="<?=BASE_URL?>v154/js/vegas/vegas.min.css">
+        
+		<!-- Main CSS files -->
+        <link rel="stylesheet" href="<?=BASE_URL?>v154/css/this.css">
+
+	
+		<article class="" style="margin: 0px 0px 0px 0px;">
+
+
+		
+		
+		          
+            <div class="h-right" style="margin: 80px 0px 0px 540px;">
+							<h2><b style="font-size:50px; color:gray">UNDER DEVELOPMENT</b></h2>
+							<img style="float: left; margin: -20px 0px 0px 0px;" src="<?=base_url()?>assets/img/foltime3.png" height="100" width="100" />
+						</div>
+			<div class="section page-home page page-cent" id="s-home">
+
+				
+			<section class="content" style="margin: 0px 0px 0px 780px;">
+				<header class="header">
+						<h3 style="color:orange;">CSE & TICKET<br>INTEGRATED MONITORING SYSTEM</h3>
+						<h4 class="subhead" style="color:gray;"><a href="#">Available here soon</a></h4>
+					
 				</header>
-				<div>
-					<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
-					<span class="ribbon-button-alignment pull-right" style="margin: -38px 10px 0px 0px; "> 
-						<section>
-							<label class="label">
-							<small style="color:white;font-size:12px; font-weight: bold;">Select Client/Bank</small>
-							</label>
-							<label class="select">
-								<select>
-									<option value="0">Pilih Client/Bank</option>
-									<option value="1">Client/Bank1</option>
-									<option value="2">Client/Bank2</option>
-									<option value="3">Client/Bank3</option>
-								</select> <i></i> </label>
-						</section>
-					</span>
-					<!-- Styles -->
-					<style>
-					#chartdiv1 {
-					  width: 100%;
-					  height: 400px;
-					}
-					</style>
-
-					<!-- Resources -->
-					<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-					<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-					<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-					<!-- Chart code -->
-					<script>
-					am4core.ready(function() {
-
-					// Themes begin
-					am4core.useTheme(am4themes_animated);
-					// Themes end
-
-					// Create chart instance
-					var chart = am4core.create("chartdiv1", am4charts.XYChart);
-
-					// Add data
-					chart.data = [{
-					  "date": "2013-01-16",
-					  "market1": 71,
-					  "market2": 75,
-					  "sales1": 5,
-					  "sales2": 8
-					}, {
-					  "date": "2013-01-17",
-					  "market1": 74,
-					  "market2": 78,
-					  "sales1": 4,
-					  "sales2": 6
-					}, {
-					  "date": "2013-01-18",
-					  "market1": 78,
-					  "market2": 88,
-					  "sales1": 5,
-					  "sales2": 2
-					}, {
-					  "date": "2013-01-19",
-					  "market1": 85,
-					  "market2": 89,
-					  "sales1": 8,
-					  "sales2": 9
-					}, {
-					  "date": "2013-01-20",
-					  "market1": 82,
-					  "market2": 89,
-					  "sales1": 9,
-					  "sales2": 6
-					}, {
-					  "date": "2013-01-21",
-					  "market1": 83,
-					  "market2": 85,
-					  "sales1": 3,
-					  "sales2": 5
-					}, {
-					  "date": "2013-01-22",
-					  "market1": 88,
-					  "market2": 92,
-					  "sales1": 5,
-					  "sales2": 7
-					}, {
-					  "date": "2013-01-23",
-					  "market1": 85,
-					  "market2": 90,
-					  "sales1": 7,
-					  "sales2": 6
-					}, {
-					  "date": "2013-01-24",
-					  "market1": 85,
-					  "market2": 91,
-					  "sales1": 9,
-					  "sales2": 5
-					}, {
-					  "date": "2013-01-25",
-					  "market1": 80,
-					  "market2": 84,
-					  "sales1": 5,
-					  "sales2": 8
-					}, {
-					  "date": "2013-01-26",
-					  "market1": 87,
-					  "market2": 92,
-					  "sales1": 4,
-					  "sales2": 8
-					}, {
-					  "date": "2013-01-27",
-					  "market1": 84,
-					  "market2": 87,
-					  "sales1": 3,
-					  "sales2": 4
-					}, {
-					  "date": "2013-01-28",
-					  "market1": 83,
-					  "market2": 88,
-					  "sales1": 5,
-					  "sales2": 7
-					}, {
-					  "date": "2013-01-29",
-					  "market1": 84,
-					  "market2": 87,
-					  "sales1": 5,
-					  "sales2": 8
-					}, {
-					  "date": "2013-01-30",
-					  "market1": 81,
-					  "market2": 85,
-					  "sales1": 4,
-					  "sales2": 7
-					}];
-
-					// Create axes
-					var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
-					//dateAxis.renderer.grid.template.location = 0;
-					//dateAxis.renderer.minGridDistance = 30;
-
-					var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
-					valueAxis1.title.text = "Sales";
-
-					var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
-					valueAxis2.title.text = "Total Tickets";
-					valueAxis2.renderer.opposite = true;
-					valueAxis2.renderer.grid.template.disabled = true;
-
-					// Create series
-					var series1 = chart.series.push(new am4charts.ColumnSeries());
-					series1.dataFields.valueY = "sales1";
-					series1.dataFields.dateX = "date";
-					series1.yAxis = valueAxis1;
-					series1.name = "Target Sales";
-					series1.tooltipText = "{name}\n[bold font-size: 20]${valueY}M[/]";
-					series1.fill = chart.colors.getIndex(0);
-					series1.strokeWidth = 0;
-					series1.clustered = false;
-					series1.columns.template.width = am4core.percent(40);
-
-					var series2 = chart.series.push(new am4charts.ColumnSeries());
-					series2.dataFields.valueY = "sales2";
-					series2.dataFields.dateX = "date";
-					series2.yAxis = valueAxis1;
-					series2.name = "Actual Sales";
-					series2.tooltipText = "{name}\n[bold font-size: 20]${valueY}M[/]";
-					series2.fill = chart.colors.getIndex(0).lighten(0.5);
-					series2.strokeWidth = 0;
-					series2.clustered = false;
-					series2.toBack();
-
-					var series3 = chart.series.push(new am4charts.LineSeries());
-					series3.dataFields.valueY = "market1";
-					series3.dataFields.dateX = "date";
-					series3.name = "Market Days";
-					series3.strokeWidth = 2;
-					series3.tensionX = 0.7;
-					series3.yAxis = valueAxis2;
-					series3.tooltipText = "{name}\n[bold font-size: 20]{valueY}[/]";
-
-					var bullet3 = series3.bullets.push(new am4charts.CircleBullet());
-					bullet3.circle.radius = 3;
-					bullet3.circle.strokeWidth = 2;
-					bullet3.circle.fill = am4core.color("#fff");
-
-					var series4 = chart.series.push(new am4charts.LineSeries());
-					series4.dataFields.valueY = "market2";
-					series4.dataFields.dateX = "date";
-					series4.name = "Market Days ALL";
-					series4.strokeWidth = 2;
-					series4.tensionX = 0.7;
-					series4.yAxis = valueAxis2;
-					series4.tooltipText = "{name}\n[bold font-size: 20]{valueY}[/]";
-					series4.stroke = chart.colors.getIndex(0).lighten(0.5);
-					series4.strokeDasharray = "3,3";
-
-					var bullet4 = series4.bullets.push(new am4charts.CircleBullet());
-					bullet4.circle.radius = 3;
-					bullet4.circle.strokeWidth = 2;
-					bullet4.circle.fill = am4core.color("#fff");
-
-					// Add cursor
-					chart.cursor = new am4charts.XYCursor();
-
-					// Add legend
-					chart.legend = new am4charts.Legend();
-					chart.legend.position = "top";
-
-					// Add scrollbar
-					chart.scrollbarX = new am4charts.XYChartScrollbar();
-					chart.scrollbarX.series.push(series1);
-					chart.scrollbarX.series.push(series3);
-					chart.scrollbarX.parent = chart.bottomAxesContainer;
-
-					}); // end am4core.ready()
-					</script>
-
-					<!-- HTML -->
-					<div id="chartdiv1" style="margin: 0px 0px 0px 0px;"></div>			
-					</div>
-				</div>
+			</section>
+			
+			<div class="pane-when " id="s-when">
+				<div class="content">
+					<!-- Clock -->
+					
+					
+					<div class="clock clock-countdown" style="float:left; margin: -10px 0px 0px 390px;">
+						<div class="site-config"
+							 data-date="03/11/2021 00:00:00" 
+							 data-date-timezone="+0"
+							 ></div>					
+						<div class="elem-center">
+							<div class="digit">
+								<span class="days">8</span>
+								<span class="txt" style="font-size:48px; margin: -30px 0px 0px 0px;">days</span>
+							</div>
+						</div>
+						<div class="elem-bottom">
+							<div class="deco"></div>
+							
+							<span class="days">12</span><span class="thin"> D</span>
+							<span class="hours">18</span><span class="thin"> H</span>
+							<span class="minutes">45</span><span class="thin"> M</span>
+							<span class="seconds">36</span><span class="thin"> S</span>
+						</div>
+							<center>
+						<p>Before we launch our New Update Systems</p>
+					</center> 
+					</div> 
+					
+					              
+				</div> 
 			</div>
+ 
+			
+		
+			
+			<script src="<?=BASE_URL?>v154/js/vendor/jquery-1.11.2.min.js"></script>
+			<script src="<?=BASE_URL?>v154/js/jquery.downCount.js"></script>
+			<script src="<?=BASE_URL?>v154/js/main.js"></script>
+		
 		</article>	
-		<article class="col-sm-12 col-md-12 col-lg-12" style="margin: -55px 0px 0px 0px;">
-			<div class="jarviswidget jarviswidget-color-purple" id="wid-id-2"
-			data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" data-widget-sortable="false" 
-			data-widget-colorbutton="false" data-widget-deletebutton="false">
-				<header style="background: linear-gradient(to bottom, #00c6ff, #0072ff);height:5px;">
-				</header>
-				<div>
-					<div class="widget-body no-padding" style="background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
-						<div class="col-sm-3" style="margin: 15px 0px 0px 0px;">
-							<h4 class="alert alert-info zoomsmall" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 5px 5px;">
-							<p class="small" align="justify" style="color:white;font-size:10px; margin: 0px 0px 0px 0px;height:50px;">
-							<img style="float: left; margin: 2px 10px 0px 0px;" src="<?=base_url()?>assets/img/filerack.png" 
-							height="45" width="45"/>
-							<b style="letter-spacing: -1px;font-size:14px; margin: 0px 0px 0px 0px;">
-							TEST MENU
-							</b><br>
-							<small style="color:white;font-size:10px; margin: 0px 0px 0px 0px;">
-							TEST DATA & MENU</small></p>
-							</h4>
-						</div>	
-						<div class="col-sm-3" style="margin: 15px 0px 0px 0px;">
-							<h4 class="alert alert-info zoomsmall" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 5px 5px;">
-							<p class="small" align="justify" style="color:white;font-size:10px; margin: 0px 0px 0px 0px;height:50px;">
-							<img style="float: left; margin: 2px 10px 0px 0px;" src="<?=base_url()?>assets/img/filerack.png" 
-							height="45" width="45"/>
-							<b style="letter-spacing: -1px;font-size:14px; margin: 0px 0px 0px 0px;">
-							TEST MENU
-							</b><br>
-							<small style="color:white;font-size:10px; margin: 0px 0px 0px 0px;">
-							TEST DATA & MENU</small></p>
-							</h4>
-						</div>	
-						<div class="col-sm-3" style="margin: 15px 0px 0px 0px;">
-							<h4 class="alert alert-info zoomsmall" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 5px 5px;">
-							<p class="small" align="justify" style="color:white;font-size:10px; margin: 0px 0px 0px 0px;height:50px;">
-							<img style="float: left; margin: 2px 10px 0px 0px;" src="<?=base_url()?>assets/img/filerack.png" 
-							height="45" width="45"/>
-							<b style="letter-spacing: -1px;font-size:14px; margin: 0px 0px 0px 0px;">
-							TEST MENU
-							</b><br>
-							<small style="color:white;font-size:10px; margin: 0px 0px 0px 0px;">
-							TEST DATA & MENU</small></p>
-							</h4>
-						</div>	
-						<div class="col-sm-3" style="margin: 15px 0px 0px 0px;">
-							<h4 class="alert alert-info zoomsmall" style="background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );border-radius: 5px 5px 5px 5px;">
-							<p class="small" align="justify" style="color:white;font-size:10px; margin: 0px 0px 0px 0px;height:50px;">
-							<img style="float: left; margin: 2px 10px 0px 0px;" src="<?=base_url()?>assets/img/filerack.png" 
-							height="45" width="45"/>
-							<b style="letter-spacing: -1px;font-size:14px; margin: 0px 0px 0px 0px;">
-							TEST MENU
-							</b><br>
-							<small style="color:white;font-size:10px; margin: 0px 0px 0px 0px;">
-							TEST DATA & MENU</small></p>
-							</h4>
-						</div>	
-					</div>
-				</div>
-				<div style="background: linear-gradient(to bottom, #00c6ff, #0072ff);height:5px">
-				</div>
-			</div>
-		</article>	
-	</div>
+	
+	
 	
 </section>
 @endsection

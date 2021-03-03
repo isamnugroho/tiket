@@ -28,7 +28,7 @@ class Master_inventory extends MY_Controller {
 		$q = "SELECT 
 				b.nama_part, a.*, a.quantity as quantity_in,
 				#(SELECT count(*) FROM master_inventory_part WHERE id_detail=a.id AND status='available') as available, 
-				(SELECT price FROM master_inventory_part WHERE id_detail=a.id LIMIT 0,1) as price,
+				#(SELECT count(*) FROM master_inventory_part WHERE id_detail=a.id AND status='used') as used,
 				(SELECT COALESCE(SUM(quantity),0) FROM master_transaction_out WHERE kode_part=a.kode_part) AS quantity_out,
 				(SUM(IF(b.category = 'consume', 
 					a.quantity, 
@@ -40,7 +40,6 @@ class Master_inventory extends MY_Controller {
 		$data = array();
 		foreach($result as $r) {
 			$data['stock'] = $r->stock;
-			$data['price'] = $r->price;
 			$this->db->where('id', $r->kode_part);
 			$this->db->update('master_inventory', $data);
 		}
@@ -301,7 +300,7 @@ class Master_inventory extends MY_Controller {
                 $rows->nama_part,
                 $rows->merk,
                 $rows->stock,
-                '<a onclick="updateModal(
+                '<center><a onclick="updateModal(
 					\''.$rows->id.'\',
 					\''.$rows->kode_part.'\',
 					\''.$rows->nama_part.'\',
@@ -309,8 +308,8 @@ class Master_inventory extends MY_Controller {
 					\''.$rows->part_no.'\',
 					\''.$rows->stock.'\',
 					\''.$rows->price.'\'
-				)" class="btn btn-warning mr-1"><img style="float: left; margin: 3px 5px 0px 0px; height:15px; width:15px; " src="'.base_url().'seipkon/assets/img/edit.png"/>Edit</a>
-                 <a onclick="deleteAction(\''.$url.'/delete/'.$rows->id.'\')" class="btn btn-danger mr-1"><img style="float: left; margin: 3px 5px 0px 0px; height:18px; width:18px; " src="'.base_url().'seipkon/assets/img/delete.png"/>Delete</a>'
+				)" class="btn btn-warning btn-sm zoomsmall" style="background: linear-gradient(to bottom, #fe8c00, #f83600);border-radius: 4px;font-weight:bold;"><img style="float: left; margin: 1px 5px 0px 0px; height:15px; width:15px; " src="'.base_url().'seipkon/assets/img/edit.png"/>Edit</a>
+                 <a onclick="deleteAction(\''.$url.'/delete/'.$rows->id.'\')" class="btn btn-danger btn-sm zoomsmall" style="background: linear-gradient(to top, #ed213a, #93291e);border-radius: 4px;font-weight:bold;"><img style="float: left; margin: 1px 5px 0px 0px; height:18px; width:18px; " src="'.base_url().'seipkon/assets/img/del.png"/>Delete</a></center>'
             );     
         }
 		
